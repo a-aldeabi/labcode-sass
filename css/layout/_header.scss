@@ -39,6 +39,9 @@ header {
       gap: $space-32;
       align-items: center;
       font-size: $font14;
+      .login-btn {
+        display: none;
+      }
 
       li {
         a {

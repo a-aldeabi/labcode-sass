@@ -71,6 +71,9 @@
     pointer-events: none;
     transition: top 0.5s ease, opacity 0.3s ease;
   }
+  .nav-items .login-btn {
+    display: block !important;
+  }
   .nav-items li {
     width: 100%;
     text-align: center;
@@ -212,8 +215,8 @@ body {
   transition: all 0.3s ease;
 }
 .btn-white:hover {
-  background-color: #13111d;
-  color: white;
+  background-color: #f0f0f0;
+  color: #13111d;
 }
 
 /* =========================
@@ -345,6 +348,9 @@ header nav .nav-items {
   gap: 32px;
   align-items: center;
   font-size: 14px;
+}
+header nav .nav-items .login-btn {
+  display: none;
 }
 header nav .nav-items li a {
   color: #666666;

@@ -58,6 +58,9 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
     transition:
       top 0.5s ease,
       opacity 0.3s ease; // smooth transition
+    .login-btn {
+      display: block !important;
+    }
 
     li {
       width: 100%;
