@@ -1,0 +1,99 @@
+@use "../themes/theme" as *;
+
+/* Breakpoints */
+$breakpoint-xs: 0px; // XS
+$breakpoint-sm: 480px; // SM
+$breakpoint-md: 768px; // MD - Tablets
+$breakpoint-lg: 1024px; // LG - Laptops/Desktop
+$breakpoint-xl: 1200px; // XL - Large Desktop
+$breakpoint-xxl: 1600px; // XXL - Very Large Screens
+
+/* Media Queries */
+
+/* XXL - ≤1600px */
+@media (max-width: $breakpoint-xxl) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* XL - ≤1200px */
+@media (max-width: $breakpoint-xl) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* LG - ≤1024px */
+@media (max-width: $breakpoint-lg) {
+  body {
+    font-size: 17px;
+  }
+}
+
+/* MD - ≤768px */
+@media (max-width: $breakpoint-md) {
+  .authentication .btn-burger-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    font-size: 14px;
+    position: absolute;
+    top: -273px; // default before click
+    right: 0;
+    width: 100%;
+    align-items: center;
+    background: $color-primary;
+    z-index: 20;
+    padding: $space-32 $space-40;
+
+    opacity: 0; // hidden initially
+    pointer-events: none; // not clickable
+    transition:
+      top 0.5s ease,
+      opacity 0.3s ease; // smooth transition
+
+    li {
+      width: 100%;
+      text-align: center;
+      .btn-white {
+        width: 100%;
+      }
+      a {
+        color: white !important;
+        width: 100%;
+      }
+    }
+  }
+
+  .pull-menu {
+    top: 83px; // final position after click
+    opacity: 1; // visible
+    pointer-events: auto; // clickable
+  }
+
+  .authentication {
+    .search-btn,
+    .btn-sm {
+      display: none;
+    }
+  }
+}
+
+/* SM - ≤480px */
+@media (max-width: $breakpoint-sm) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* XS - default */
+body {
+  font-size: 14px;
+}

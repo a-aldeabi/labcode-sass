@@ -1,0 +1,69 @@
+@use "../themes/index" as *;
+@use "../abstracts/index" as *;
+
+.btn {
+  @include button(12px, 18px); // base size
+}
+
+.btn-sm {
+  @include button(8px, 24px); // small size
+  font-size: 14px;
+}
+
+.btn-dm {
+  @include button(10px, 16px); // medium size
+  font-size: $font14;
+}
+
+.btn-lg {
+  @include button(16px, 24px); // large size
+  font-size: $font16;
+}
+
+/* burger btn */
+.btn-burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: $space-4;
+  cursor: pointer;
+
+  span {
+    width: 24px;
+    height: 2px;
+    background-color: $color-heading;
+    border-radius: 2px;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+  }
+}
+.btn-burger-menu.is-active {
+  span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+    -webkit-transform: translateY(6px) rotate(45deg);
+    -moz-transform: translateY(6px) rotate(45deg);
+    -ms-transform: translateY(6px) rotate(45deg);
+    -o-transform: translateY(6px) rotate(45deg);
+  }
+
+  span:nth-child(2) {
+    opacity: 0;
+  }
+
+  span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}
+
+.btn-white {
+  @include button(12px, 18px);
+  background-color: white;
+  color: $color-heading;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-heading;
+    color: white;
+  }
+}

@@ -1,0 +1,11 @@
+@use "./themes/index" as *;
+@use "./components/index" as *;
+@use "./base/index" as reset;
+@use "./layout/index" as *;
+
+* {
+  font-family: $font-primary;
+}
+body {
+  background-color: white;
+}

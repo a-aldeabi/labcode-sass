@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* =========================
+   Colors
+   ========================= */
+$color-primary: #7b6ef1;
+$color-primary-dark: #5e53c4;
+
+$color-heading: #13111d;
+$color-text: #666666;
+
+$color-bg: #ffffff;
+$color-bg-gray: #f0f0f0;
+$color-bg-secondary: #efeefa;
+$color-bg-secondary-alt: #f9f8ff;
+$color-footer-bg: #13111d;
+
+/* =========================
+   Typography
+   ========================= */
+$font-primary:
+  "Poppins",
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  sans-serif;
+
+/* =========================
+   Font Weights
+   ========================= */
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+/* =========================
+   Border Radius
+   ========================= */
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 12px;
+$radius-xl: 20px;
+
+/* =========================
+   Borders
+   ========================= */
+$border-light: 1px solid rgba(0, 0, 0, 0.08);
+$border-primary: 1px solid $color-primary;
+
+/* =========================
+   Shadows
+   ========================= */
+$shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+/* =========================
+   Font Sizes
+   ========================= */
+$font12: 12px;
+$font14: 14px;
+$font16: 16px;
+$font18: 18px;
+$font20: 20px;
+$font22: 22px;
+$font24: 24px;
+$font26: 26px;
+$font28: 28px;
+$font30: 30px;
+$font32: 32px;
+$font36: 36px;
+$font40: 40px;
+$font44: 44px;
+$font48: 48px;
+
+/* =========================
+   Containers
+   ========================= */
+$container: 1248px;
+
+/* =========================
+   Dynamic Spacing Map
+   ========================= */
+$space-4: 4px;
+$space-8: 8px;
+$space-12: 12px;
+$space-16: 16px;
+$space-20: 20px;
+$space-24: 24px;
+$space-28: 28px;
+$space-32: 32px;
+$space-36: 36px;
+$space-40: 40px;
+$space-44: 44px;
+$space-48: 48px;
+$space-52: 52px;
+$space-56: 56px;
+$space-60: 60px;
+$space-64: 64px;
+$space-68: 68px;
+$space-72: 72px;
+$space-76: 76px;
+$space-80: 80px;
+$space-84: 84px;
+$space-88: 88px;
+$space-92: 92px;
+$space-96: 96px;
+$space-100: 100px;
+$space-104: 104px;
+$space-108: 108px;
+$space-112: 112px;
+$space-116: 116px;
+$space-120: 120px;

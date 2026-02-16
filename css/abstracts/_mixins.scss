@@ -1,0 +1,14 @@
+@use "../themes/theme" as *;
+
+@mixin button($padding-x, $padding-y) {
+  padding: $padding-x $padding-y;
+  color: white;
+  background-color: $color-primary;
+  border: none;
+  font-size: $font14;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: darken($color-primary, 10%);
+  }
+}

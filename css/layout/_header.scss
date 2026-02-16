@@ -1,0 +1,79 @@
+@use "../themes/index" as *;
+@use "../components/index" as *;
+
+header {
+  box-shadow: $shadow-sm;
+  width: 100%;
+
+  nav {
+    min-height: 80px;
+    display: flex;
+    position: relative;
+    max-width: $container;
+    margin: 0 auto;
+    padding: 0 $space-24;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-nav {
+      display: flex;
+      gap: $space-100;
+      align-items: center;
+    }
+
+    .logo {
+      h2 {
+        font-size: $font22;
+        font-weight: bold;
+        color: $color-heading;
+
+        span {
+          color: $color-primary;
+        }
+      }
+    }
+
+    .nav-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $space-32;
+      align-items: center;
+      font-size: $font14;
+
+      li {
+        a {
+          color: $color-text;
+          transition: color 0.2s ease;
+          -webkit-transition: color 0.2s ease;
+          -moz-transition: color 0.2s ease;
+          -ms-transition: color 0.2s ease;
+          -o-transition: color 0.2s ease;
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
+    .authentication {
+      display: flex;
+      align-items: center;
+      gap: $space-32;
+      .search-btn {
+        padding: 6px 12px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        &:hover {
+          background-color: $color-bg-gray;
+        }
+      }
+
+      button {
+        cursor: pointer;
+      }
+    }
+  }
+}
