@@ -29,10 +29,21 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
   body {
     font-size: 17px;
   }
+
+  #banner {
+    background: $color-bg-secondary;
+    height: 90vh;
+
+    .banner-wrapper {
+      height: 90vh;
+      padding: $space-60;
+    }
+  }
 }
 
 /* MD - ≤768px */
 @media (max-width: $breakpoint-md) {
+  /* nav menu */
   .authentication .btn-burger-menu {
     display: flex;
     flex-direction: column;
@@ -50,7 +61,7 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
     width: 100%;
     align-items: center;
     background: $color-primary;
-    z-index: 20;
+    z-index: 300;
     padding: $space-32 $space-40;
 
     opacity: 0; // hidden initially
@@ -87,12 +98,52 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
       display: none;
     }
   }
+
+  /*end of nav */
+
+  #banner {
+    height: auto;
+
+    .banner-wrapper {
+      height: auto;
+      flex-wrap: wrap;
+      gap: $space-40;
+
+      .banner-text-side {
+        order: 2;
+        justify-content: center;
+        text-align: center;
+
+        .banner-btns {
+          > * {
+            flex: 1;
+            justify-content: center;
+          }
+        }
+      }
+
+      > * {
+        flex: 100%;
+      }
+    }
+  }
 }
 
 /* SM - ≤480px */
 @media (max-width: $breakpoint-sm) {
   body {
     font-size: 15px;
+  }
+  #banner {
+    .banner-text-side {
+      h1 {
+        font-size: $font40;
+      }
+      .banner-btns {
+        flex-direction: column;
+        gap: $space-12;
+      }
+    }
   }
 }
 
