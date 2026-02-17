@@ -423,7 +423,9 @@ header nav .authentication button {
   cursor: pointer;
 }
 
-/* search nav */
+/* =========================
+   Search Bar
+   ========================= */
 .search-bar {
   background: #fafafa;
   color: #666;
@@ -466,6 +468,9 @@ header nav .authentication button {
   align-items: center;
   justify-content: center;
 }
+.search-bar {
+  z-index: 100;
+}
 
 .showbar {
   opacity: 1;
@@ -473,7 +478,7 @@ header nav .authentication button {
   transform: translateY(0);
 }
 
-/*end of search bar */
+/* End of search bar */
 .banner {
   background: #efeefa;
   height: 85vh;
@@ -571,6 +576,52 @@ header nav .authentication button {
 .banner .banner-wrapper .banner-text-side .banner-btns .btn-white {
   display: flex;
   align-items: center;
+}
+
+.video-modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.329);
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  display: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.video-modal #close-video-btn {
+  position: absolute;
+  top: 0px;
+  color: white;
+  background: #13111d;
+  padding: 14px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  right: -51px;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  align-items: center;
+}
+.video-modal .video-warapper {
+  background: white;
+  width: 800px;
+  position: relative;
+}
+.video-modal .video-warapper #myVideo {
+  width: 100%;
+  max-width: 100%;
+}
+
+.showvideo {
+  display: flex;
 }
 
 * {

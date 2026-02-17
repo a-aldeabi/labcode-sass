@@ -40,6 +40,7 @@ header {
       gap: $space-32;
       align-items: center;
       font-size: $font14;
+
       .login-btn {
         display: none;
       }
@@ -52,6 +53,7 @@ header {
           -moz-transition: color 0.2s ease;
           -ms-transition: color 0.2s ease;
           -o-transition: color 0.2s ease;
+
           &:hover {
             color: $color-primary;
           }
@@ -63,6 +65,7 @@ header {
       display: flex;
       align-items: center;
       gap: $space-32;
+
       .search-btn {
         padding: 6px 12px;
         cursor: pointer;
@@ -71,6 +74,7 @@ header {
         -moz-transition: all 0.5s;
         -ms-transition: all 0.5s;
         -o-transition: all 0.5s;
+
         &:hover {
           background-color: $color-bg-light-gray;
         }
@@ -83,7 +87,9 @@ header {
   }
 }
 
-/* search nav */
+/* =========================
+   Search Bar
+   ========================= */
 .search-bar {
   background: $color-bg-light-gray;
   color: #666;
@@ -118,6 +124,7 @@ header {
     opacity 0.3s ease,
     transform 0.3s ease,
     visibility 0.3s ease;
+
   form {
     max-width: $container;
     margin: 0 auto;
@@ -142,6 +149,7 @@ header {
     align-items: center;
     justify-content: center;
   }
+  z-index: 100;
 }
 
 .showbar {
@@ -149,5 +157,4 @@ header {
   visibility: visible;
   transform: translateY(0);
 }
-
-/*end of search bar */
+/* End of search bar */
