@@ -1,8 +1,10 @@
+@use "../themes/theme" as *;
+
 /* =========================
    SASS RESET
    ========================= */
 
-/* Box sizing */
+/* Box sizing for all elements */
 *,
 *::before,
 *::after {
@@ -15,7 +17,7 @@
   padding: 0;
 }
 
-/* HTML & Body */
+/* HTML & Body base styles */
 html {
   font-size: 100%; // 16px
   scroll-behavior: smooth;
@@ -36,7 +38,7 @@ body {
     sans-serif;
 }
 
-/* Images */
+/* Images and media */
 img,
 picture,
 video,
@@ -92,7 +94,7 @@ table {
   border-spacing: 0;
 }
 
-/* Accessibility: reduce motion */
+/* Accessibility: reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -102,4 +104,43 @@ table {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* =========================
+   Accessibility Base Styles
+   ========================= */
+
+/* Focus state for buttons, links, and inputs */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid $color-primary; // Only appears when using keyboard
+  outline-offset: 2px;
+}
+
+/* Hidden text for screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Skip navigation link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
 }

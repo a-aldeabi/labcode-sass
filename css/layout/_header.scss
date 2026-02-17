@@ -4,6 +4,7 @@
 header {
   box-shadow: $shadow-sm;
   width: 100%;
+  position: relative;
 
   nav {
     min-height: 80px;
@@ -64,13 +65,14 @@ header {
       gap: $space-32;
       .search-btn {
         padding: 6px 12px;
+        cursor: pointer;
         transition: all 0.5s;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         -ms-transition: all 0.5s;
         -o-transition: all 0.5s;
         &:hover {
-          background-color: $color-bg-gray;
+          background-color: $color-bg-light-gray;
         }
       }
 
@@ -80,3 +82,72 @@ header {
     }
   }
 }
+
+/* search nav */
+.search-bar {
+  background: $color-bg-light-gray;
+  color: #666;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  -webkit-transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+  -moz-transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+  -ms-transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+  -o-transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+  form {
+    max-width: $container;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  input {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-heading;
+    cursor: pointer;
+    width: 83px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.showbar {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/*end of search bar */

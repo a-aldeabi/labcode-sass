@@ -9,6 +9,6 @@
   cursor: pointer;
   transition: background-color 0.2s;
   &:hover {
-    background-color: darken($color-primary, 10%);
+    background-color: darken($color-primary, 8%);
   }
 }

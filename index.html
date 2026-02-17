@@ -11,24 +11,33 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <!-- End CSS -->
+
+    </style>
+    <!--animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
   </head>
 
   <body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header / Navigation -->
     <header>
-      <nav>
+      <nav role="navigation">
         <div class="left-nav">
           <div class="logo">
-            <h2>Lab<span>code</span></h2>
+            <a href="index.html" aria-label="Go to homepage">
+              <h2>Lab<span>code</span></h2>
+            </a>
           </div>
 
           <ul class="nav-items" id="pullMenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" role="link">Home</a></li>
+            <li><a href="#" role="link">About</a></li>
+            <li><a href="#" role="link">Courses</a></li>
+            <li><a href="#" role="link">Blogs</a></li>
+            <li><a href="#" role="link">Contact</a></li>
             <li class="login-btn">
               <button class="btn-dm btn-white">Login</button>
             </li>
@@ -36,50 +45,74 @@
         </div>
 
         <div class="authentication">
-          <button aria-label="Search" class="search-btn">
+          <button aria-label="Search" class="search-btn" id="search-btn">
             <i class="ri-search-line"></i>
           </button>
           <button class="btn-sm">Login</button>
-          <button class="btn-burger-menu">
+          <button class="btn-burger-menu" aria-label="Toggle menu">
             <span></span>
             <span></span>
             <span></span>
           </button>
         </div>
       </nav>
+      <div class="search-bar">
+        <form>
+          <label for="search-input" class="sr-only">Search the site</label>
+          <i class="ri-search-line search-icon"></i>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="What are you looking for?"
+          />
+        </form>
+      </div>
     </header>
-    <!-- End Header / Navigation -->
 
-    <!-- Hero Banner -->
-    <section class="banner"></section>
-    <!-- End Hero Banner -->
+    <!-- Main Content Wrapper -->
+    <main id="main-content">
+      <!-- Hero Banner -->
+      <section class="banner">
+        <div class="banner-wrapper">
+          <div class="banner-text-side">
+             <h1>From Basic to<span>  Advance</span></h1>
+             <p> We guide you step by step to master programming 
+              and design   
+              with ease. Start your journey today and turn your  ideas into reality.</p>
+              <div class="banner-btns">
+                 <a href="#" class="btn">Get started</a>
+                 <a href="#" class="btn btn-white">Watch video <i class="ri-arrow-right-s-fill"></i></a>
+              </div>
+          </div>
 
-    <!-- Bootcamp Section -->
-    <section class="bootcamp"></section>
-    <!-- End Bootcamp Section -->
+          <div class="banner-img-side">
+            <div class="img-warrper">
+              <img src="img/man-smile-laptop.jpg" alt="man simle and holding laptop">
+            </div>
 
-    <!-- Why Choose Us Section -->
-    <section class="choose-us"></section>
-    <!-- End Why Choose Us Section -->
+          </div>
+          </div>
+      </section>
 
-    <!-- Highlights Section -->
-    <section class="highlights"></section>
-    <!-- End Highlights Section -->
+      <!-- Bootcamp Section -->
+      <section class="bootcamp"></section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonial"></section>
-    <!-- End Testimonials Section -->
+      <!-- Why Choose Us Section -->
+      <section class="choose-us"></section>
+
+      <!-- Highlights Section -->
+      <section class="highlights"></section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonial"></section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer"></footer>
-    <!-- End Footer -->
 
     <!-- JS -->
     <script src="js/custom.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-      lucide.createIcons();
-    </script>
-    <!-- End JS -->
+    <script src="js/animation.js"></script>
+   
   </body>
 </html>

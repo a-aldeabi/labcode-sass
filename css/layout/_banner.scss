@@ -1,0 +1,112 @@
+@use "../themes/index" as *;
+.banner {
+  background: $color-bg-secondary;
+  height: 85vh;
+
+  .banner-wrapper {
+    height: 85vh;
+
+    padding: 0 $space-32;
+    margin: 0 auto;
+    max-width: $container;
+    display: flex;
+    gap: $space-80; // space between the two children
+    justify-content: space-between;
+
+    // Each child takes equal space
+    > * {
+      flex: 1;
+    }
+
+    /* ========================
+       Image side
+       ======================== */
+    .banner-img-side {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .img-warrper {
+        position: relative; // parent for pseudo-elements
+
+        // Blue square behind image
+        &::before {
+          content: "";
+          content: "";
+          position: absolute;
+          top: -25px;
+          right: -32px;
+          width: 69px;
+          height: 51px;
+          background-image: url(../img/dots-pattern.svg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          z-index: 1;
+        }
+
+        // Dots pattern above blue square
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -24px;
+          left: -33px;
+          width: 65px;
+          height: 50px;
+          background-image: url(../img/dots-pattern.svg);
+          background-size: cover;
+          z-index: 2;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+          object-fit: contain;
+          display: block;
+          position: relative; // above pseudo-elements
+          z-index: 3;
+        }
+      }
+    }
+
+    /* ========================
+       Text side
+       ======================== */
+    .banner-text-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: $space-16;
+
+      h1 {
+        font-size: $font48;
+        font-weight: bold;
+
+        span {
+          color: $color-primary;
+        }
+      }
+
+      p {
+        color: $color-text;
+        font-size: $font16;
+      }
+
+      .banner-btns {
+        margin-top: $space-32;
+        display: flex;
+        gap: $space-32;
+
+        .btn {
+          display: flex;
+          align-items: center;
+        }
+
+        .btn-white {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
