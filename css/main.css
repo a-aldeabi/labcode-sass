@@ -73,7 +73,7 @@
     right: 0;
     width: 100%;
     align-items: center;
-    background: #7b6ef1;
+    background: #5b4fe0;
     z-index: 300;
     padding: 32px 40px;
     opacity: 0;
@@ -124,6 +124,9 @@
   #banner .banner-wrapper > * {
     flex: 100%;
   }
+  #bootcamp .course-card-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* SM - ≤480px */
 @media (max-width: 480px) {
@@ -137,6 +140,23 @@
     flex-direction: column;
     gap: 12px;
   }
+  #bootcamp .course-card-group {
+    grid-template-columns: 1fr;
+  }
+  #banner .imgtxt {
+    bottom: 20px;
+    left: 16px;
+  }
+  #banner .imgtxt h2 {
+    font-size: 18px;
+  }
+  #banner .imgtxt li {
+    font-size: 11px;
+  }
+  #banner .imgtxt li i {
+    width: 14px;
+    height: 14px;
+  }
 }
 /* XS - default */
 body {
@@ -146,27 +166,27 @@ body {
 .btn {
   padding: 12px 18px;
   color: white;
-  background-color: #7b6ef1;
+  background-color: #5b4fe0;
   border: none;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 .btn:hover {
-  background-color: rgb(89.1283018868, 72.7924528302, 237.4075471698);
+  background-color: rgb(58.6753623188, 44.3101449275, 217.8898550725);
 }
 
 .btn-sm {
   padding: 8px 24px;
   color: white;
-  background-color: #7b6ef1;
+  background-color: #5b4fe0;
   border: none;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 .btn-sm:hover {
-  background-color: rgb(89.1283018868, 72.7924528302, 237.4075471698);
+  background-color: rgb(58.6753623188, 44.3101449275, 217.8898550725);
 }
 .btn-sm {
   font-size: 14px;
@@ -175,14 +195,14 @@ body {
 .btn-dm {
   padding: 10px 16px;
   color: white;
-  background-color: #7b6ef1;
+  background-color: #5b4fe0;
   border: none;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 .btn-dm:hover {
-  background-color: rgb(89.1283018868, 72.7924528302, 237.4075471698);
+  background-color: rgb(58.6753623188, 44.3101449275, 217.8898550725);
 }
 .btn-dm {
   font-size: 14px;
@@ -191,14 +211,14 @@ body {
 .btn-lg {
   padding: 16px 24px;
   color: white;
-  background-color: #7b6ef1;
+  background-color: #5b4fe0;
   border: none;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 .btn-lg:hover {
-  background-color: rgb(89.1283018868, 72.7924528302, 237.4075471698);
+  background-color: rgb(58.6753623188, 44.3101449275, 217.8898550725);
 }
 .btn-lg {
   font-size: 16px;
@@ -236,14 +256,14 @@ body {
 .btn-white {
   padding: 12px 18px;
   color: white;
-  background-color: #7b6ef1;
+  background-color: #5b4fe0;
   border: none;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 .btn-white:hover {
-  background-color: rgb(89.1283018868, 72.7924528302, 237.4075471698);
+  background-color: rgb(58.6753623188, 44.3101449275, 217.8898550725);
 }
 .btn-white {
   background-color: white;
@@ -359,7 +379,7 @@ table {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
-  outline: 2px solid #7b6ef1;
+  outline: 2px solid #5b4fe0;
   outline-offset: 2px;
 }
 
@@ -416,7 +436,7 @@ header nav .logo h2 {
   color: #13111d;
 }
 header nav .logo h2 span {
-  color: #7b6ef1;
+  color: #5b4fe0;
 }
 header nav .nav-items {
   display: flex;
@@ -437,7 +457,7 @@ header nav .nav-items li a {
   -o-transition: color 0.2s ease;
 }
 header nav .nav-items li a:hover {
-  color: #7b6ef1;
+  color: #5b4fe0;
 }
 header nav .authentication {
   display: flex;
@@ -547,7 +567,7 @@ header nav .authentication button {
 }
 .banner .banner-wrapper .banner-img-side .img-warrper .imgtxt {
   position: absolute;
-  bottom: 104px;
+  bottom: 60px;
   left: 32px;
   z-index: 200;
   color: white;
@@ -630,7 +650,7 @@ header nav .authentication button {
   font-weight: bold;
 }
 .banner .banner-wrapper .banner-text-side h1 span {
-  color: #7b6ef1;
+  color: #5b4fe0;
 }
 .banner .banner-wrapper .banner-text-side p {
   color: #666666;
@@ -696,10 +716,99 @@ header nav .authentication button {
   display: flex;
 }
 
+/*bootcamp */
+.bootcamp {
+  background-color: #f9f8ff;
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+.bootcamp p {
+  color: #13111d;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.bootcamp h2 {
+  font-size: 36px;
+  color: #13111d;
+  font-weight: bold;
+}
+.bootcamp h2 span {
+  color: #5b4fe0;
+}
+.bootcamp .course-card-group {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.bootcamp .course-card-group .course-card {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  padding-bottom: 32px;
+}
+.bootcamp .course-card-group .course-card .img-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+.bootcamp .course-card-group .course-card .img-wrapper img {
+  width: 100%;
+}
+.bootcamp .course-card-group .course-card .img-wrapper .likes {
+  padding: 4px;
+  color: #666666;
+  background-color: rgba(250, 250, 250, 0.8745098039);
+  position: absolute;
+  display: flex;
+  padding: 3px 11px;
+  font-size: 12px;
+  gap: 4px;
+  border-radius: 100px;
+  top: 10px;
+  left: 10px;
+  -webkit-border-radius: 100px;
+}
+.bootcamp .course-card-group .course-card h3 {
+  font-size: 16px;
+  color: #13111d;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.bootcamp .course-card-group .course-card p {
+  font-size: 12px;
+  color: #666666;
+  font-weight: normal;
+}
+.bootcamp .course-card-group .course-card .btn {
+  margin-top: 16px;
+  display: block;
+  text-align: center;
+}
+.bootcamp .course-card-group .course-card .btn-white {
+  border: 1px solid #cccccc;
+  padding: 8px 20px;
+}
+.bootcamp .course-card-group .course-card .btn-white:hover {
+  background-color: #5b4fe0;
+  border-color: #5b4fe0;
+}
+
+/*end of bootcamp*/
 * {
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
   background-color: white;
+}
+
+.container {
+  max-width: 1248px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

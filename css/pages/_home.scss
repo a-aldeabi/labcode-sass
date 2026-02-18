@@ -1,0 +1,24 @@
+@use "../themes/index" as *;
+@use "../abstracts/index" as *;
+@use "../components/index" as *;
+
+/*bootcamp */
+.bootcamp {
+  background-color: $color-bg--Tertiary;
+  min-height: 100vh;
+  padding: $space-100 0;
+  @include heading-center;
+  .course-card-group {
+    margin-top: $space-40;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: $space-20;
+    flex-wrap: wrap;
+    .course-card {
+      @include course-card;
+    }
+  }
+}
+
+/*end of bootcamp*/

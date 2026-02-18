@@ -12,3 +12,32 @@
     background-color: darken($color-primary, 8%);
   }
 }
+
+@mixin heading-section($align) {
+  text-align: $align;
+
+  p {
+    color: $color-heading;
+    text-transform: capitalize;
+    font-size: $font14;
+    font-weight: 600;
+    margin-bottom: $space-12;
+  }
+
+  h2 {
+    font-size: $font36;
+    color: $color-heading;
+    font-weight: bold;
+    span {
+      color: $color-primary;
+    }
+  }
+}
+
+@mixin heading-center {
+  @include heading-section(center);
+}
+
+@mixin heading-left {
+  @include heading-section(left);
+}

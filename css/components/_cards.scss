@@ -1,0 +1,57 @@
+@use "../themes/theme" as *;
+
+@mixin course-card {
+  padding: $space-20;
+  background-color: white;
+  box-shadow: $shadow-sm;
+  text-align: left;
+  padding-bottom: $space-32;
+  .img-wrapper {
+    position: relative;
+    margin-bottom: $space-16;
+    img {
+      width: 100%;
+    }
+    .likes {
+      padding: 4px;
+      color: $color-text;
+      background-color: #fafafadf;
+      position: absolute;
+      display: flex;
+      padding: 3px 11px;
+      font-size: 12px;
+      gap: 4px;
+      border-radius: 100px;
+      top: 10px;
+      left: 10px;
+      -webkit-border-radius: 100px;
+    }
+  }
+  h3 {
+    font-size: $font16;
+    color: $color-heading;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: $font12;
+    color: $color-text;
+    font-weight: normal;
+  }
+  .btn {
+    margin-top: $space-16;
+    display: block;
+    text-align: center;
+  }
+  .btn-white {
+    border: 1px solid #cccccc;
+    padding: 8px 20px;
+    &:hover {
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+}
+
+.testimonial-card {
+}

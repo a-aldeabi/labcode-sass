@@ -2,10 +2,16 @@
 @use "./components/index" as *;
 @use "./base/index" as reset;
 @use "./layout/index" as *;
+@use "./pages/index" as *;
 
 * {
   font-family: $font-primary;
 }
 body {
   background-color: white;
+}
+
+.container {
+  max-width: $container;
+  margin: 0 auto;
 }
