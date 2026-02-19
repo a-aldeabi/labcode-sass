@@ -16,8 +16,8 @@
 }
 
 .btn-lg {
-  @include button(16px, 24px); // large size
-  font-size: $font16;
+  @include button(14px, 40px); // large size
+  font-size: $font14;
 }
 
 /* burger btn */

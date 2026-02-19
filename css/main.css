@@ -127,6 +127,12 @@
   #bootcamp .course-card-group {
     grid-template-columns: repeat(2, 1fr);
   }
+  #choose-us .choose-img-side {
+    display: none;
+  }
+  #choose-us .choose-text-side {
+    padding: 0 40px;
+  }
 }
 /* SM - ≤480px */
 @media (max-width: 480px) {
@@ -156,6 +162,10 @@
   #banner .imgtxt li i {
     width: 14px;
     height: 14px;
+  }
+  #choose-us .choose-text-side .btn {
+    width: 100%;
+    text-align: center;
   }
 }
 /* XS - default */
@@ -209,7 +219,7 @@ body {
 }
 
 .btn-lg {
-  padding: 16px 24px;
+  padding: 14px 40px;
   color: white;
   background-color: #5b4fe0;
   border: none;
@@ -221,7 +231,7 @@ body {
   background-color: rgb(58.6753623188, 44.3101449275, 217.8898550725);
 }
 .btn-lg {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* burger btn */
@@ -726,12 +736,12 @@ header nav .authentication button {
 .bootcamp p {
   color: #13111d;
   text-transform: capitalize;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 12px;
 }
 .bootcamp h2 {
-  font-size: 36px;
+  font-size: 40px;
   color: #13111d;
   font-weight: bold;
 }
@@ -800,6 +810,91 @@ header nav .authentication button {
 }
 
 /*end of bootcamp*/
+.choose-us {
+  min-height: 80vh;
+  padding: 100px 0;
+}
+.choose-us .choose-wrapper {
+  display: flex;
+  gap: 60px;
+}
+.choose-us .choose-wrapper .choose-img-side {
+  position: relative;
+}
+.choose-us .choose-wrapper .choose-img-side .img-wrapper {
+  padding: 20px;
+}
+.choose-us .choose-wrapper .choose-img-side .fly-small-card {
+  background: white;
+  padding: 20px;
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  width: 75%;
+  font-size: 14px;
+  color: #666666;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.choose-us .choose-wrapper .choose-text-side {
+  text-align: left;
+}
+.choose-us .choose-wrapper .choose-text-side p {
+  color: #13111d;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.choose-us .choose-wrapper .choose-text-side h2 {
+  font-size: 40px;
+  color: #13111d;
+  font-weight: bold;
+}
+.choose-us .choose-wrapper .choose-text-side h2 span {
+  color: #5b4fe0;
+}
+.choose-us .choose-wrapper .choose-text-side ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 40px;
+}
+.choose-us .choose-wrapper .choose-text-side ul li {
+  font-size: 17px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.choose-us .choose-wrapper .choose-text-side ul .tick-text {
+  background-color: #13111d;
+  color: white;
+  font-size: 14px;
+  padding: 3px 7px;
+  width: 24px;
+  height: 24px;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+}
+.choose-us .choose-wrapper .choose-text-side .btn {
+  margin-top: 40px;
+  display: inline-block;
+}
+
+/*choose us*/
+/*end od choose us*/
 * {
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -811,4 +906,13 @@ body {
 .container {
   max-width: 1248px;
   margin: 0 auto;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*more button*/
+.more-sec {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+/*end *//*# sourceMappingURL=main.css.map */

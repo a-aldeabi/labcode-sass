@@ -22,3 +22,76 @@
 }
 
 /*end of bootcamp*/
+.choose-us {
+  min-height: 80vh;
+  padding: $space-100 0;
+  .choose-wrapper {
+    display: flex;
+    gap: $space-60;
+    .choose-img-side {
+      position: relative;
+      .img-wrapper {
+        padding: $space-20;
+      }
+
+      .fly-small-card {
+        background: white;
+        padding: $space-20;
+        position: absolute;
+        bottom: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: $space-8;
+        box-shadow: $shadow-md;
+        width: 75%;
+        font-size: $font14;
+        color: $color-text;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+      }
+    }
+    .choose-text-side {
+      @include heading-left;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: $space-32;
+        margin-top: $space-40;
+
+        li {
+          font-size: 17px;
+          color: $color-text;
+          display: flex;
+          align-items: center;
+          gap: $space-12;
+          flex-wrap: wrap;
+        }
+        .tick-text {
+          background-color: $color-heading;
+          color: white;
+          font-size: 14px;
+          padding: 3px 7px;
+          width: 24px;
+          height: 24px;
+          border-radius: 200px;
+          -webkit-border-radius: 200px;
+          -moz-border-radius: 200px;
+          -ms-border-radius: 200px;
+          -o-border-radius: 200px;
+        }
+      }
+      .btn {
+        margin-top: $space-40;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/*choose us*/
+
+/*end od choose us*/

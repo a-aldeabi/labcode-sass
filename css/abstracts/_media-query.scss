@@ -131,6 +131,15 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
   #bootcamp .course-card-group {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #choose-us {
+    .choose-img-side {
+      display: none;
+    }
+    .choose-text-side {
+      padding: 0 $space-40;
+    }
+  }
 }
 
 /* SM - ≤480px */
@@ -163,6 +172,14 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
       i {
         width: 14px;
         height: 14px;
+      }
+    }
+  }
+  #choose-us {
+    .choose-text-side {
+      .btn {
+        width: 100%;
+        text-align: center;
       }
     }
   }
