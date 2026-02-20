@@ -140,6 +140,23 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
       padding: 0 $space-40;
     }
   }
+
+  #high-section {
+    .highlights-con {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      flex-direction: column;
+      gap: 0;
+      align-items: center;
+      .heading-highlights {
+        flex: 0 0 150px;
+      }
+      .numbers {
+        gap: $space-60;
+      }
+    }
+  }
 }
 
 /* SM - ≤480px */
@@ -180,6 +197,30 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
       .btn {
         width: 100%;
         text-align: center;
+      }
+    }
+  }
+
+  #bootcamp {
+    .more-sec {
+      padding: $space-20;
+      a {
+        width: 100%;
+      }
+    }
+  }
+  #banner .banner-wrapper {
+    padding: $space-40;
+  }
+
+  #high-section {
+    .numbers {
+      gap: $space-40 !important;
+      h2 {
+        font-size: $font24;
+      }
+      p {
+        font-size: $font14;
       }
     }
   }

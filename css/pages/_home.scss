@@ -22,6 +22,8 @@
 }
 
 /*end of bootcamp*/
+
+/*choose us section */
 .choose-us {
   min-height: 80vh;
   padding: $space-100 0;
@@ -72,11 +74,14 @@
         }
         .tick-text {
           background-color: $color-heading;
-          color: white;
+          color: white !important;
           font-size: 14px;
-          padding: 3px 7px;
+          display: inline-block;
+          padding: 2px 7px;
           width: 24px;
           height: 24px;
+          border-radius: 200px;
+          -webkit-border-radius: 200px;
           border-radius: 200px;
           -webkit-border-radius: 200px;
           -moz-border-radius: 200px;
@@ -92,6 +97,59 @@
   }
 }
 
-/*choose us*/
-
 /*end od choose us*/
+
+/* highlights section */
+.highlights {
+  padding-top: $space-60;
+  padding-bottom: $space-60;
+  background-color: $color-primary;
+  .highlights-con {
+    display: flex;
+    justify-content: space-between;
+    padding: $space-40;
+    .heading-highlights {
+      flex: 0 0 400px;
+      display: flex;
+      align-items: center;
+      h2 {
+        font-size: $font32;
+        color: white;
+        font-weight: bold;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 200px;
+          height: 2px;
+          background-color: white;
+          top: 20px;
+          left: -220px;
+        }
+      }
+    }
+    .numbers {
+      flex: 1;
+      display: flex;
+      gap: $space-120;
+      justify-content: end;
+      .number-block {
+        display: flex;
+        flex-direction: column;
+        gap: $space-8;
+        align-items: center;
+        h2 {
+          font-size: $font32;
+          color: white;
+          font-weight: bold;
+        }
+        p {
+          color: white;
+          font-size: $font16;
+        }
+      }
+    }
+  }
+}
+
+/*end of highlights*/

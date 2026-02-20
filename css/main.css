@@ -133,6 +133,20 @@
   #choose-us .choose-text-side {
     padding: 0 40px;
   }
+  #high-section .highlights-con {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+  #high-section .highlights-con .heading-highlights {
+    flex: 0 0 150px;
+  }
+  #high-section .highlights-con .numbers {
+    gap: 60px;
+  }
 }
 /* SM - ≤480px */
 @media (max-width: 480px) {
@@ -166,6 +180,24 @@
   #choose-us .choose-text-side .btn {
     width: 100%;
     text-align: center;
+  }
+  #bootcamp .more-sec {
+    padding: 20px;
+  }
+  #bootcamp .more-sec a {
+    width: 100%;
+  }
+  #banner .banner-wrapper {
+    padding: 40px;
+  }
+  #high-section .numbers {
+    gap: 40px !important;
+  }
+  #high-section .numbers h2 {
+    font-size: 24px;
+  }
+  #high-section .numbers p {
+    font-size: 14px;
   }
 }
 /* XS - default */
@@ -810,6 +842,7 @@ header nav .authentication button {
 }
 
 /*end of bootcamp*/
+/*choose us section */
 .choose-us {
   min-height: 80vh;
   padding: 100px 0;
@@ -877,11 +910,13 @@ header nav .authentication button {
 }
 .choose-us .choose-wrapper .choose-text-side ul .tick-text {
   background-color: #13111d;
-  color: white;
+  color: white !important;
   font-size: 14px;
-  padding: 3px 7px;
+  display: inline-block;
+  padding: 2px 7px;
   width: 24px;
   height: 24px;
+  border-radius: 200px;
   border-radius: 200px;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
@@ -893,8 +928,61 @@ header nav .authentication button {
   display: inline-block;
 }
 
-/*choose us*/
 /*end od choose us*/
+/* highlights section */
+.highlights {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #5b4fe0;
+}
+.highlights .highlights-con {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.highlights .highlights-con .heading-highlights {
+  flex: 0 0 400px;
+  display: flex;
+  align-items: center;
+}
+.highlights .highlights-con .heading-highlights h2 {
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+.highlights .highlights-con .heading-highlights h2::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  background-color: white;
+  top: 20px;
+  left: -220px;
+}
+.highlights .highlights-con .numbers {
+  flex: 1;
+  display: flex;
+  gap: 120px;
+  justify-content: end;
+}
+.highlights .highlights-con .numbers .number-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.highlights .highlights-con .numbers .number-block h2 {
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+}
+.highlights .highlights-con .numbers .number-block p {
+  color: white;
+  font-size: 16px;
+}
+
+/*end of highlights*/
 * {
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
