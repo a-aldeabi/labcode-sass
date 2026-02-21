@@ -11,32 +11,30 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-
-    </style>
-    <!--animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-
   </head>
 
   <body>
-   
-
     <!-- Header / Navigation -->
     <header>
-      <nav role="navigation">
+      <nav role="navigation" aria-label="Main navigation">
         <div class="left-nav">
           <div class="logo">
             <a href="index.html" aria-label="Go to homepage">
-              <h2>Lab<span>code</span></h2>
+              <h1>Lab<span>code</span></h1>
             </a>
           </div>
-
           <ul class="nav-items" id="pullMenu">
-            <li><a href="#" role="link">Home</a></li>
-            <li><a href="#" role="link">About</a></li>
-            <li><a href="#" role="link">Courses</a></li>
-            <li><a href="#" role="link">Blogs</a></li>
-            <li><a href="#" role="link">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
             <li class="login-btn">
               <button class="btn-dm btn-white">Login</button>
             </li>
@@ -47,7 +45,7 @@
           <button aria-label="Search" class="search-btn" id="search-btn">
             <i class="ri-search-line"></i>
           </button>
-          <button class="btn-sm">Login</button>
+          <button class="btn-sm" aria-label="Login">Login</button>
           <button class="btn-burger-menu" aria-label="Toggle menu">
             <span></span>
             <span></span>
@@ -55,6 +53,7 @@
           </button>
         </div>
       </nav>
+
       <div class="search-bar">
         <form>
           <label for="search-input" class="sr-only">Search the site</label>
@@ -74,190 +73,330 @@
       <section class="banner" id="banner">
         <div class="banner-wrapper">
           <div class="banner-text-side">
-             <h1>From Basic to<span>  Advance</span></h1>
-             <p> We guide you step by step to master programming 
-              and design   
-              with ease. Start your journey today and turn your  ideas into reality.</p>
-              <div class="banner-btns">
-                 <a href="#" class="btn">Get started</a>
-                 <a href="#" class="btn btn-white" id="video-btn">Watch video <i class="ri-arrow-right-s-fill"></i></a>
-              </div>
+            <h2>From Basic to<span> Advance</span></h2>
+            <p>
+              We guide you step by step to master programming and design with
+              ease. Start your journey today and turn your ideas into reality.
+            </p>
+            <div class="banner-btns">
+              <a href="#" class="btn" aria-label="Get started">Get started</a>
+              <a
+                href="#"
+                class="btn btn-white"
+                id="video-btn"
+                aria-label="Watch introduction video"
+              >
+                Watch video <i class="ri-arrow-right-s-fill"></i>
+              </a>
+            </div>
           </div>
 
           <div class="banner-img-side">
             <div class="img-warrper">
               <div class="imgtxt">
                 <h2>UI UX Designers</h2>
-                  <ul>
-                    <li><i class="ri-check-line"></i> <span>days a week</span> </li>
-                    <li><i class="ri-check-line"></i> <span>9 AM - 4 PM training</span> </li>
-                    <li><i class="ri-check-line"></i> <span>Expert mentor with full support</span> </li>
-                  </ul>
+                <ul>
+                  <li>
+                    <i class="ri-check-line"></i> <span>days a week</span>
+                  </li>
+                  <li>
+                    <i class="ri-check-line"></i>
+                    <span>9 AM - 4 PM training</span>
+                  </li>
+                  <li>
+                    <i class="ri-check-line"></i>
+                    <span>Expert mentor with full support</span>
+                  </li>
+                </ul>
               </div>
-              <img src="img/man-smile-laptop.jpg" alt="man simle and holding laptop">
+              <img
+                src="img/man-smile-laptop.jpg"
+                alt="Smiling man holding a laptop"
+              />
             </div>
-
           </div>
+        </div>
+
+        <!-- Video modal -->
+        <div class="video-modal" id="video-modal">
+          <div class="video-warapper">
+            <button id="close-video-btn" aria-label="Close video">
+              <i class="ri-close-fill"></i>
+            </button>
+            <video
+              id="myVideo"
+              controls
+              autoplay
+              muted
+              aria-label="Introductory video"
+            >
+              <source src="img/intro-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
-
-          <!--video model-->
-          <div class="video-modal" id="video-modal">
-            <div class="video-warapper">
-                <button id="close-video-btn"><i class="ri-close-fill"></i></button>
-              <video id="myVideo" controls="" autoplay="" muted="false">
-          <source src="img/intro-video.mp4" type="video/mp4">
-        </video>   
-</div>
-
-            </div>
-
-          <!--end of video model -->
+        </div>
       </section>
 
       <!-- Bootcamp Section -->
-<section class="bootcamp" id="bootcamp">
-  <div class="container">
-    <div class="heading-center">
-      <p>Most Popular</p>
-      <h2>Discover Your <span>Bootcamp</span></h2>
-    </div>
-    <div class="course-card-group">
-      <div class="course-card">
-        <div class="img-wrapper">
-          <img src="img/course-img/cour1.jpg" alt="Course image">
-          <div class="likes"><span>2.5k</span><i class="ri-heart-fill"></i></div>
-        </div>
-        <h3>Social Media Markting</h3>
-        <p>Beginner - 40 hours</p>
-        <p>star</p>
-        <a href="#" class="btn btn-white">Enroll Now</a>
-      </div>
-      <div class="course-card">
-        <div class="img-wrapper">
-          <img src="img/course-img/cour2.jpg" alt="Course image">
-          <div class="likes"><span>2.5k</span><i class="ri-heart-fill"></i></div>
-        </div>
-        <h3>Social Media Markting</h3>
-        <p>Beginner - 40 hours</p>
-        <p>star</p>
-        <a href="#" class="btn btn-white">Enroll Now</a>
-      </div>
-      <div class="course-card">
-        <div class="img-wrapper">
-          <img src="img/course-img/cour3.jpg" alt="Course image">
-          <div class="likes"><span>2.5k</span><i class="ri-heart-fill"></i></div>
-        </div>
-        <h3>Social Media Markting</h3>
-        <p>Beginner - 40 hours</p>
-        <p>star</p>
-        <a href="#" class="btn btn-white">Enroll Now</a>
-      </div>
-      <div class="course-card">
-        <div class="img-wrapper">
-          <img src="img/course-img/cour4.jpg" alt="Course image">
-          <div class="likes"><span>2.5k</span><i class="ri-heart-fill"></i></div>
-        </div>
-        <h3>Social Media Markting</h3>
-        <p>Beginner - 40 hours</p>
-        <p>star</p>
-        <a href="#" class="btn btn-white">Enroll Now</a>
-      </div>
-    </div>
-    <dvi class="more-sec">
-       <a href="#" class="btn btn-lg">Discover More</a>
-    </dvi>
-  </div>
-</section>
-
-
-      <!-- Why Choose Us Section -->
-      <section class="choose-us" id="choose-us">
-         <div class="container choose-wrapper">
-            <div class="choose-img-side">
+      <section class="bootcamp" id="bootcamp">
+        <div class="container">
+          <div class="heading-center">
+            <p>Most Popular</p>
+            <h2>Discover Your <span>Bootcamp</span></h2>
+          </div>
+          <div class="course-card-group">
+            <!-- Four sample course cards -->
+            <div class="course-card">
               <div class="img-wrapper">
-                 <img src="img/man-smile-wirte.jpg" alt="man smile and write with laptop"/>
-                  <div class="fly-small-card">
-                     <img src="img/flay-avatar-girl.png" alt="avatar for smily girl"/>
-                     <p>I truly gained valuable insights from this training!  🙌</p>
-                  </div>
+                <img
+                  src="img/course-img/cour1.jpg"
+                  alt="Social Media Marketing course"
+                />
+                <div class="likes">
+                  <span>2.5k</span><i class="ri-heart-fill"></i>
+                </div>
+              </div>
+              <h3>Social Media Marketing</h3>
+              <p>Beginner - 40 hours</p>
+              <a
+                href="#"
+                class="btn btn-white"
+                aria-label="Enroll in Social Media Marketing course"
+                >Enroll Now</a
+              >
+            </div>
+            <div class="course-card">
+              <div class="img-wrapper">
+                <img
+                  src="img/course-img/cour2.jpg"
+                  alt="Social Media Marketing course"
+                />
+                <div class="likes">
+                  <span>2.5k</span><i class="ri-heart-fill"></i>
+                </div>
+              </div>
+              <h3>Social Media Marketing</h3>
+              <p>Beginner - 40 hours</p>
+              <a
+                href="#"
+                class="btn btn-white"
+                aria-label="Enroll in Social Media Marketing course"
+                >Enroll Now</a
+              >
+            </div>
+            <div class="course-card">
+              <div class="img-wrapper">
+                <img
+                  src="img/course-img/cour3.jpg"
+                  alt="Social Media Marketing course"
+                />
+                <div class="likes">
+                  <span>2.5k</span><i class="ri-heart-fill"></i>
+                </div>
+              </div>
+              <h3>Social Media Marketing</h3>
+              <p>Beginner - 40 hours</p>
+              <a
+                href="#"
+                class="btn btn-white"
+                aria-label="Enroll in Social Media Marketing course"
+                >Enroll Now</a
+              >
+            </div>
+            <div class="course-card">
+              <div class="img-wrapper">
+                <img
+                  src="img/course-img/cour4.jpg"
+                  alt="Social Media Marketing course"
+                />
+                <div class="likes">
+                  <span>2.5k</span><i class="ri-heart-fill"></i>
+                </div>
+              </div>
+              <h3>Social Media Marketing</h3>
+              <p>Beginner - 40 hours</p>
+              <a
+                href="#"
+                class="btn btn-white"
+                aria-label="Enroll in Social Media Marketing course"
+                >Enroll Now</a
+              >
+            </div>
+          </div>
+          <div class="more-sec">
+            <a href="#" class="btn btn-lg" aria-label="Discover more courses"
+              >Discover More</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Choose Us Section -->
+      <section class="choose-us" id="choose-us">
+        <div class="container choose-wrapper">
+          <div class="choose-img-side">
+            <div class="img-wrapper">
+              <img
+                src="img/man-smile-wirte.jpg"
+                alt="Man smiling and writing on laptop"
+              />
+              <div class="fly-small-card">
+                <img src="img/flay-avatar-girl.png" alt="Smiling girl avatar" />
+                <p>I truly gained valuable insights from this training! 🙌</p>
               </div>
             </div>
-            <div class="choose-text-side">
-              <div class="heading-left">
-      <p>  Best choice   </p>
-      <h2>Why people  <span>choose us</span></h2>
-    </div>
-  <ul>
-  <li>
-   
-    <span class="tick-text">✔</span>   <span><b>Expert Trainers: </b>Industry professionals with hands-on experience.</span>
-  </li>
-  <li>
-     
-  <span class="tick-text">✔</span>  <span> <b>Comprehensive Courses: </b>Tailored for all skill levels, from beginner to advanced.</span>
-  </li>
-  <li>
-    <span class="tick-text">✔</span> <span><b>Flexible Learning:</b> Online, on-demand classes to fit your schedule.</span>
-  </li>
-  <li>
-  <span>
-    <span class="tick-text">✔</span>
-    <b>Practical Projects:</b> Real-world tasks to build a strong portfolio.
-  </span>
-</li>
-
-</ul>
-<a href="#" class="btn btn-lg">Join Now</a>
-
+          </div>
+          <div class="choose-text-side">
+            <div class="heading-left">
+              <p>Best choice</p>
+              <h2>Why people <span>choose us</span></h2>
             </div>
-         </div>
-
-
+            <ul>
+              <li>
+                <span class="tick-text">✔</span>
+                <span><b>Expert Trainers: </b>Industry professionals.</span>
+              </li>
+              <li>
+                <span class="tick-text">✔</span>
+                <span><b>Comprehensive Courses: </b>All skill levels.</span>
+              </li>
+              <li>
+                <span class="tick-text">✔</span>
+                <span><b>Flexible Learning:</b> Online, on-demand.</span>
+              </li>
+              <li>
+                <span class="tick-text">✔</span>
+                <span><b>Practical Projects:</b> Real-world tasks.</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-lg" aria-label="Join now">Join Now</a>
+          </div>
+        </div>
       </section>
 
       <!-- Highlights Section -->
       <section class="highlights" id="high-section">
         <div class="container">
           <div class="highlights-con">
-         <div class="heading-highlights">
-           <h2>Our Highlights</h2>
-
-         </div>
-         <div class="numbers">
-           <div class="number-block">
-             <h2>2.7k</h2>
-             <p>students</p>
-           </div>
-            <div class="number-block">
-             <h2>48</h2>
-             <p>course</p>
-           </div>
-            <div class="number-block">
-             <h2>13.5k</h2>
-             <p>Reviews</p>
-           </div>
-         </div>
-         </div>
+            <div class="heading-highlights"><h2>Our Highlights</h2></div>
+            <div class="numbers">
+              <div class="number-block">
+                <h2>2.7k</h2>
+                <p>students</p>
+              </div>
+              <div class="number-block">
+                <h2>48</h2>
+                <p>course</p>
+              </div>
+              <div class="number-block">
+                <h2>13.5k</h2>
+                <p>Reviews</p>
+              </div>
+            </div>
           </div>
+        </div>
       </section>
 
       <!-- Testimonials Section -->
-      <section class="testimonial"></section>
+      <section class="testimonial" id="testimonial">
+        <div class="container">
+          <div class="heading-center">
+            <p>Best choice</p>
+            <h2>Why people <span>choose us</span></h2>
+          </div>
+
+          <!-- Swiper Container -->
+          <div
+            class="swiper testimonial-swiper"
+            aria-label="Testimonials slider"
+          >
+            <div class="swiper-wrapper">
+              <!-- Slides generated dynamically via JS -->
+            </div>
+
+            <!-- Navigation -->
+            <div class="swiper-button-next" aria-label="Next testimonial"></div>
+            <div
+              class="swiper-button-prev"
+              aria-label="Previous testimonial"
+            ></div>
+
+            <!-- Pagination -->
+            <div
+              class="swiper-pagination"
+              aria-label="Testimonials pagination"
+            ></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container footer-con" id="footer-con">
+        <!-- Column 1: Logo & Description -->
+        <div class="footer-column logo-column">
+          <div class="footer-logo">
+            <h2>Lab<span>code</span></h2>
+          </div>
+          <p>
+            We are an online school teaching design and programming, providing
+            students with practical skills for today’s job market.
+          </p>
+        </div>
 
-    <!-- JS -->
+        <!-- Column 2: Help / Links -->
+        <div class="footer-column">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Follow Us -->
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li><a href="#" aria-label="Follow on Twitter">Twitter</a></li>
+            <li>
+              <a href="#" aria-label="Follow on Instagram">Instagram</a>
+            </li>
+            <li><a href="#" aria-label="Follow on LinkedIn">LinkedIn</a></li>
+            <li><a href="#" aria-label="Follow on YouTube">YouTube</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Info -->
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="contact-info">
+            <li>Phone: <a href="tel:+49123456789">+49 123 456789</a></li>
+            <li>
+              Email:
+              <a href="mailto:contact@labcode.com">contact@labcode.com</a>
+            </li>
+            <li>Address: Labcode Street, 123 Tech Park, Berlin, Germany</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Labcode. All rights reserved.</p>
+      </div>
+      <button class="move-top-btn"><i class="ri-arrow-up-s-fill"></i></button>
+    </footer>
+
+    <!-- JS Libraries -->
     <script src="js/custom.js"></script>
+    <script src="js/components/testimonials.js"></script>
     <script src="js/animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-
-    
-<script>
-
-</script>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>

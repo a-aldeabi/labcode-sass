@@ -31,3 +31,26 @@ closeVideo.addEventListener("click", () => {
   video.pause();
   video.currentTime = 0;
 });
+
+/*  move top btn */
+// JS
+const moveTopBtn = document.querySelector(".move-top-btn");
+
+// Show/hide button on scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    moveTopBtn.classList.add("active");
+  } else {
+    moveTopBtn.classList.remove("active");
+  }
+});
+
+// Smooth scroll to top on click
+moveTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+/*end of move top */

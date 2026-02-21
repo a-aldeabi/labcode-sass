@@ -1,0 +1,84 @@
+@use "../themes/theme" as *;
+
+// Card styling
+.testimonial-card {
+  padding: $space-40;
+  height: 100%;
+  padding-top: $space-80;
+  box-shadow: $shadow-md;
+  background-color: white;
+  width: 100%;
+
+  .testmonial-des {
+    color: $color-text;
+    font-size: $font14;
+    font-weight: normal;
+    margin-bottom: $space-32;
+    line-height: 1.6;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 59px;
+      height: 50px;
+      left: 0;
+      top: -42px;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-image: url(../img/testmonial-avatars/quote-icon.png);
+    }
+
+    &::after {
+      content: "";
+      width: 59px;
+      height: 50px;
+      transform: rotate(180deg);
+      right: 0;
+      bottom: -42px;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-image: url(../img/testmonial-avatars/quote-icon.png);
+    }
+  }
+
+  .user-block {
+    display: flex;
+    gap: $space-16;
+    align-items: center;
+
+    .user-text {
+      h3 {
+        font-size: $font14;
+        font-weight: bold;
+      }
+      p {
+        font-size: $font12;
+        color: $color-text;
+      }
+    }
+  }
+}
+
+.testimonial-swiper {
+  width: 100%;
+  padding: 20px 0;
+  padding-bottom: 60px !important;
+  position: relative;
+  background-color: transparent;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    padding: $space-12;
+  }
+  .swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    span {
+      background-color: $color-primary;
+    }
+  }
+}

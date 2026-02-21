@@ -157,6 +157,13 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
       }
     }
   }
+
+  #footer-con {
+    grid-template-columns: 1fr 1fr;
+    .logo-column {
+      padding: 0;
+    }
+  }
 }
 
 /* SM - ≤480px */
@@ -222,6 +229,13 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
       p {
         font-size: $font14;
       }
+    }
+  }
+
+  #footer-con {
+    grid-template-columns: 1fr;
+    .logo-column {
+      padding: 0;
     }
   }
 }

@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: "#bootcamp",
       start: "top 80%",
-      toggleActions: "play none none none",
     },
     defaults: { duration: 0.8, ease: "power2.out" },
   });
@@ -43,7 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
       "#bootcamp .course-card",
       { y: 30, opacity: 0, stagger: 0.2 },
       "-=0.3",
-    );
+    )
+    .from("#bootcamp .more-sec", { y: 20, opacity: 0 }, "-=0.2"); // animate Read More
 
   /* =========================
      Choose Us section animation
@@ -52,49 +52,56 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: "#choose-us",
       start: "top 80%",
-      toggleActions: "play none none none",
     },
     defaults: { duration: 0.8, ease: "power2.out" },
   });
 
-  // Image + floating card
   chooseTL
-    .from(".choose-img-side img", {
-      scale: 0.9,
-      opacity: 0,
-    })
-    .from(
-      ".fly-small-card",
-      {
-        y: 30,
-        opacity: 0,
-      },
-      "-=0.4",
-    );
-
-  // Text heading
-  chooseTL
+    .from(".choose-img-side img", { scale: 0.9, opacity: 0 })
+    .from(".fly-small-card", { y: 30, opacity: 0 }, "-=0.4")
     .from("#choose-us .heading-left p", { y: -20, opacity: 0 }, "-=0.3")
-    .from("#choose-us .heading-left h2", { y: -30, opacity: 0 }, "-=0.5");
+    .from("#choose-us .heading-left h2", { y: -30, opacity: 0 }, "-=0.5")
+    .from("#choose-us ul li", { x: -20, opacity: 0, stagger: 0.15 }, "-=0.3")
+    .from("#choose-us .btn", { y: 20, opacity: 0 }, "-=0.2");
 
-  // List items
-  chooseTL.from(
-    "#choose-us ul li",
-    {
-      x: -20,
-      opacity: 0,
-      stagger: 0.15,
+  /* =========================
+     Highlights section animation
+  ========================== */
+  const highlightsTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#high-section",
+      start: "top 80%",
     },
-    "-=0.3",
+    defaults: { duration: 1, ease: "power2.out" },
+  });
+
+  highlightsTL
+    .from(".heading-highlights h2", { y: -30, opacity: 0 })
+    .from(".number-block", { y: 40, opacity: 0, stagger: 0.2 }, "-=0.5");
+
+  /* =========================
+     Testimonial section animation
+  ========================== */
+  const testimonialTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#testimonial",
+      start: "top 80%",
+    },
+    defaults: { duration: 1, ease: "power2.out" },
+  });
+
+  // Section heading
+  testimonialTL.from("#testimonial .heading-center p", { y: -20, opacity: 0 });
+  testimonialTL.from(
+    "#testimonial .heading-center h2",
+    { y: -30, opacity: 0 },
+    "-=0.5",
   );
 
-  // Button
-  chooseTL.from(
-    "#choose-us .btn",
-    {
-      y: 20,
-      opacity: 0,
-    },
-    "-=0.2",
+  // Testimonial cards
+  testimonialTL.from(
+    "#testimonial .swiper-slide",
+    { y: 40, opacity: 0, stagger: 0.2 },
+    "-=0.5",
   );
 });

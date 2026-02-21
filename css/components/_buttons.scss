@@ -67,3 +67,35 @@
     color: white;
   }
 }
+
+/* go top  btn*/
+
+.move-top-btn {
+  padding: 8px 14px;
+  background-color: $color-primary;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  position: fixed;
+  box-shadow: $shadow-md;
+  opacity: 0;
+  font-size: $font20;
+  transform: scale(0);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    background-color 0.3s ease;
+  &:hover {
+    background-color: $color-gray;
+    transform: scale(1.1);
+  }
+
+  &.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*end of top btn*/

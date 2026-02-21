@@ -153,3 +153,18 @@
 }
 
 /*end of highlights*/
+
+/*Testmonial section */
+.testimonial {
+  padding: $space-100 0;
+  background-color: $color-bg-secondary;
+
+  .heading-center {
+    @include heading-center;
+  }
+  .swiper-wrapper {
+    margin-top: $space-60;
+  }
+}
+
+/*end of Testmonial */
