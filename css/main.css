@@ -54,6 +54,9 @@
     height: 90vh;
     padding: 60px;
   }
+  #statistics-con {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 /* MD - ≤768px */
 @media (max-width: 768px) {
@@ -153,6 +156,19 @@
   #footer-con .logo-column {
     padding: 0;
   }
+  #features-con {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #features-con .Features-left-side {
+    width: 100%;
+  }
+  #statistics-con {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #teachers-con {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* SM - ≤480px */
 @media (max-width: 480px) {
@@ -210,6 +226,29 @@
   }
   #footer-con .logo-column {
     padding: 0;
+  }
+  .inner-page-banner::after,
+  .inner-page-banner::before {
+    display: none;
+  }
+  .inner-page-banner .inner-con {
+    padding: 20px;
+  }
+  .inner-page-banner .inner-con h2 {
+    font-size: 28px;
+  }
+  .inner-page-banner .inner-con p {
+    font-size: 14px;
+  }
+  #statistics-con {
+    grid-template-columns: 1fr;
+  }
+  #teachers-con {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  #teachers-con img {
+    width: 80%;
   }
 }
 /* XS - default */
@@ -428,6 +467,54 @@ body {
 }
 .testimonial-swiper .swiper-pagination span {
   background-color: #5b4fe0;
+}
+
+/* components/_inner-page-banner.scss */
+.inner-page-banner {
+  background: #efeefa;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  /* استخدام المكسن لتجنب تكرار الكود */
+}
+.inner-page-banner::before {
+  content: "";
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  background-image: url(../img/dots-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.inner-page-banner::after {
+  content: "";
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  background-image: url(../img/dots-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.inner-page-banner h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.inner-page-banner p {
+  font-size: 16px;
+  max-width: 550px;
+  margin: 0 auto;
+  color: #666666;
+  line-height: 1.6;
 }
 
 /* =========================
@@ -912,6 +999,146 @@ header nav .authentication button {
   font-size: 12px;
 }
 
+.Features {
+  padding: 80px 20px;
+}
+.Features .features-con {
+  display: flex;
+}
+.Features .features-con .Features-left-side {
+  width: 600px;
+}
+.Features .features-con .Features-left-side h2 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #13111d;
+  margin-bottom: 32px;
+}
+.Features .features-con .Features-left-side h2 span {
+  color: #5b4fe0;
+}
+.Features .features-con .Features-left-side p {
+  color: #666666;
+  max-width: 80%;
+  line-height: 1.7;
+  font-size: 15.5px;
+}
+.Features .features-con .Features-right-side {
+  flex: 1;
+}
+.Features .features-con .Features-right-side h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.Features .features-con .Features-right-side ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.Features .features-con .Features-right-side ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15.5px;
+  color: #666666;
+}
+
+/* statistics section */
+.statistics {
+  background-color: #5b4fe0;
+  padding: 20px;
+}
+.statistics .statistics-con {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.statistics .statistics-con .statistics-block {
+  background-color: #3c32ab;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+  padding: 60px 20px;
+}
+.statistics .statistics-con .statistics-block h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.statistics .statistics-con .statistics-block h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.statistics .statistics-con .statistics-block p {
+  font-size: 14px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.878);
+  margin-top: 16px;
+}
+
+/*end of statistics-con*/
+/*teachers section */
+.teachers {
+  background-color: #efeefa;
+  padding: 80px 20px;
+  text-align: center;
+}
+.teachers p {
+  color: #13111d;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.teachers h2 {
+  font-size: 40px;
+  color: #13111d;
+  font-weight: bold;
+}
+.teachers h2 span {
+  color: #5b4fe0;
+}
+.teachers .heading-des {
+  font-weight: normal;
+  margin-top: 16px;
+}
+.teachers .teachers-con {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+  align-items: start;
+  grid-template-columns: repeat(4, 1fr);
+}
+.teachers .teachers-con .teacher-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.teachers .teachers-con .teacher-block img {
+  width: 180px;
+  margin-bottom: 16px;
+}
+.teachers .teachers-con .teacher-block h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.teachers .teachers-con .teacher-block h4 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #5b4fe0;
+  margin-bottom: 20px;
+}
+.teachers .teachers-con .teacher-block p {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/*end of teachers section */
 /*bootcamp */
 .bootcamp {
   background-color: #f9f8ff;

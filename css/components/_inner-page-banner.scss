@@ -1,0 +1,36 @@
+/* components/_inner-page-banner.scss */
+@use "../themes/index" as *;
+@use "../abstracts/index" as *;
+
+.inner-page-banner {
+  background: $color-bg-secondary;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  /* استخدام المكسن لتجنب تكرار الكود */
+  &::before {
+    @include banner-dot(left);
+  }
+
+  &::after {
+    @include banner-dot(right);
+  }
+
+  h2 {
+    font-size: $font40;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: $font16;
+    max-width: 550px;
+    margin: 0 auto;
+    color: $color-text;
+    line-height: 1.6;
+  }
+}

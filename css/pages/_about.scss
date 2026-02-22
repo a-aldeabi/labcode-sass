@@ -1,0 +1,130 @@
+@use "../themes/index" as *;
+@use "../abstracts/index" as *;
+
+.Features {
+  padding: $space-80 $space-20;
+  .features-con {
+    display: flex;
+    .Features-left-side {
+      width: 600px;
+      h2 {
+        font-weight: bold;
+        font-size: $font36;
+        color: $color-heading;
+        margin-bottom: $space-32;
+        span {
+          color: $color-primary;
+        }
+      }
+      p {
+        color: $color-text;
+        max-width: 80%;
+        line-height: 1.7;
+        font-size: $font15;
+      }
+    }
+    .Features-right-side {
+      flex: 1;
+      h2 {
+        font-weight: bold;
+        margin-bottom: $space-20;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: $space-16;
+        li {
+          display: flex;
+          align-items: center;
+          gap: $space-12;
+          font-size: $font15;
+          color: $color-text;
+        }
+      }
+    }
+  }
+}
+
+/* statistics section */
+.statistics {
+  background-color: $color-primary;
+  padding: $space-20;
+  .statistics-con {
+    padding: $space-60 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $space-32;
+    .statistics-block {
+      background-color: $color-primary-dark;
+      padding: $space-20;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: $space-8;
+      padding: $space-60 $space-20;
+      h2 {
+        font-size: $font40;
+        font-weight: bold;
+      }
+      h3 {
+        font-size: $font18;
+        font-weight: 500;
+      }
+      p {
+        font-size: $font14;
+        font-weight: 100;
+        color: rgba(255, 255, 255, 0.878);
+        margin-top: $space-16;
+      }
+    }
+  }
+}
+
+/*end of statistics-con*/
+
+/*teachers section */
+.teachers {
+  background-color: $color-bg-secondary;
+  padding: $space-80 $space-20;
+  @include heading-center;
+  .heading-des {
+    font-weight: normal;
+    margin-top: $space-16;
+  }
+
+  .teachers-con {
+    margin-top: $space-40;
+    display: grid;
+    gap: $space-20;
+    align-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    .teacher-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 180px;
+        margin-bottom: $space-16;
+      }
+      h3 {
+        font-size: $font20;
+        font-weight: bold;
+        margin-bottom: $space-16;
+      }
+      h4 {
+        font-weight: bold;
+        font-size: $font18;
+        color: $color-primary;
+        margin-bottom: $space-20;
+      }
+      p {
+        font-weight: normal;
+        font-size: $font16;
+      }
+    }
+  }
+}
+
+/*end of teachers section */

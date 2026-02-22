@@ -41,3 +41,20 @@
 @mixin heading-left {
   @include heading-section(left);
 }
+
+@mixin banner-dot($side) {
+  content: "";
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  background-image: url(../img/dots-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  @if $side == left {
+    left: 0;
+  } @else if $side == right {
+    right: 0;
+  }
+}

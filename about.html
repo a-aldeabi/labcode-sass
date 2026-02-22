@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LabCode</title>
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Header / Navigation -->
+    <header>
+      <nav role="navigation" aria-label="Main navigation">
+        <div class="left-nav">
+          <div class="logo">
+            <a href="index.html" aria-label="Go to homepage">
+              <h1>Lab<span>code</span></h1>
+            </a>
+          </div>
+          <ul class="nav-items" id="pullMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="login-btn">
+              <button class="btn-dm btn-white">Login</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="authentication">
+          <button aria-label="Search" class="search-btn" id="search-btn">
+            <i class="ri-search-line"></i>
+          </button>
+          <button class="btn-sm" aria-label="Login">Login</button>
+          <button class="btn-burger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="search-bar">
+        <form>
+          <label for="search-input" class="sr-only">Search the site</label>
+          <i class="ri-search-line search-icon"></i>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="What are you looking for?"
+          />
+        </form>
+      </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main id="main-content">
+      <!--inner  banner page -->
+      <section class="inner-page-banner">
+        <div class="inner-con">
+          <h2>About us</h2>
+          <p>
+            At Labcode, we offer expert-led, hands-on courses to gain essential
+            tech skills and real-world experience, accelerating your journey
+            into the tech industry.
+          </p>
+        </div>
+      </section>
+      <!-- end of inner banner section -->
+
+      <!--Features section -->
+      <section class="Features">
+        <div class="features-con container" id="features-con">
+          <div class="Features-left-side">
+            <h2>
+              Labcode: Where Learning <span><br />Meets Simplicity</span>
+            </h2>
+            <p>
+              Labcode provides an innovative online learning platform that
+              simplifies tech concepts, making education accessible and engaging
+              from anywhere.
+            </p>
+          </div>
+          <div class="Features-right-side">
+            <h2>Features</h2>
+            <ul>
+              <li>
+                <i class="ri-check-line"></i> Expert-Led Courses: Learn from
+                industry professionals with real-world experience.
+              </li>
+              <li>
+                <i class="ri-check-line"></i> Interactive Learning: Hands-on
+                projects, quizzes, and assignments to reinforce skills.
+              </li>
+              <li>
+                <i class="ri-check-line"></i> Flexible Schedules: Study at your
+                convenience with on-demand video lessons.
+              </li>
+              <li>
+                <i class="ri-check-line"></i> Tech-Focused Curriculum: Courses
+                tailored for the latest technologies and trends.
+              </li>
+              <li>
+                <i class="ri-check-line"></i> Community Support: Join a growing
+                network of like-minded learners and mentors.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of Features -->
+
+      <!--statistics section-->
+      <section class="statistics" id="statistics">
+        <div class="container statistics-con" id="statistics-con">
+          <div class="statistics-block">
+            <h2>32</h2>
+            <h3>Teachers in our online school</h3>
+            <p>Experienced tech educators, guiding you every step.</p>
+          </div>
+          <div class="statistics-block">
+            <h2>200+</h2>
+            <h3>Online Courses Available</h3>
+            <p>Experienced tech educators, guiding you every step.</p>
+          </div>
+          <div class="statistics-block">
+            <h2>1000+</h2>
+            <h3>Students Enrolled Globally</h3>
+            <p>Experienced tech educators, guiding you every step.</p>
+          </div>
+          <div class="statistics-block">
+            <h2>24/7</h2>
+            <h3>Access to Resources</h3>
+            <p>Experienced tech educators, guiding you every step.</p>
+          </div>
+        </div>
+      </section>
+      <!--end of statistics-->
+
+      <!-- Choose Us Section -->
+      <section class="choose-us" id="choose-us">
+        <div class="container choose-wrapper">
+          <div class="choose-img-side">
+            <div class="img-wrapper">
+              <img
+                src="img/women-smile-wirte.png"
+                alt="Man smiling and writing on laptop"
+              />
+              <div class="fly-small-card">
+                <img src="img/flay-avatar-girl.png" alt="Smiling girl avatar" />
+                <p>I truly gained valuable insights from this training! 🙌</p>
+              </div>
+            </div>
+          </div>
+          <div class="choose-text-side">
+            <div class="heading-left">
+              <p>Best choice</p>
+              <h2>Why people <span>choose us</span></h2>
+            </div>
+            <ul>
+              <li>
+                <span class="tick-text">✔</span>
+                <span><b>Expert Trainers: </b>Industry professionals.</span>
+              </li>
+              <li>
+                <span class="tick-text">✔</span>
+                <span><b>Comprehensive Courses: </b>All skill levels.</span>
+              </li>
+              <li>
+                <span class="tick-text">✔</span>
+                <span><b>Flexible Learning:</b> Online, on-demand.</span>
+              </li>
+              <li>
+                <span class="tick-text">✔</span>
+                <span><b>Practical Projects:</b> Real-world tasks.</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-lg" aria-label="Join now">Join Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!--Our Teachers -->
+      <section class="teachers">
+        <div class="container">
+          <div class="heading-center">
+            <p>Meet Our Expert Teachers</p>
+            <h2>Our <span>teachers</span></h2>
+            <p class="heading-des">
+              Experienced instructors guiding you every step to success.
+            </p>
+          </div>
+          <div class="teachers-con" id="teachers-con">
+            <div class="teacher-block">
+              <img src="img/teachers/teacher-1.jpg" alt="teacher foto" />
+              <h3>Leslie Alexander</h3>
+              <h4>UI / UX Designer</h4>
+              <p>
+                Expert in creating intuitive and user-friendly designs, focused
+                on enhancing user experience.
+              </p>
+            </div>
+
+            <div class="teacher-block">
+              <img src="img/teachers/teacher-2.jpg" alt="teacher foto" />
+              <h3>Robert Fox</h3>
+              <h4>Frontend Developer</h4>
+              <p>
+                Specializes in responsive web design and building interactive
+                user interfaces with modern frameworks.
+              </p>
+            </div>
+
+            <div class="teacher-block">
+              <img src="img/teachers/teacher-3.jpg" alt="teacher foto" />
+              <h3>Jenny Wilson</h3>
+              <h4>Backend Developer</h4>
+              <p>
+                Experienced in server-side programming and database management,
+                ensuring scalable web applications.
+              </p>
+            </div>
+
+            <div class="teacher-block">
+              <img src="img/teachers/teacher-4.jpg" alt="teacher foto" />
+              <h3>Courtney Henry</h3>
+              <h4>Data Scientist</h4>
+              <p>
+                Passionate about machine learning and data analytics, helping
+                students understand complex datasets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--end od our teachers-->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-con" id="footer-con">
+        <!-- Column 1: Logo & Description -->
+        <div class="footer-column logo-column">
+          <div class="footer-logo">
+            <h2>Lab<span>code</span></h2>
+          </div>
+          <p>
+            We are an online school teaching design and programming, providing
+            students with practical skills for today’s job market.
+          </p>
+        </div>
+
+        <!-- Column 2: Help / Links -->
+        <div class="footer-column">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Follow Us -->
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li><a href="#" aria-label="Follow on Twitter">Twitter</a></li>
+            <li>
+              <a href="#" aria-label="Follow on Instagram">Instagram</a>
+            </li>
+            <li><a href="#" aria-label="Follow on LinkedIn">LinkedIn</a></li>
+            <li><a href="#" aria-label="Follow on YouTube">YouTube</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Info -->
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="contact-info">
+            <li>Phone: <a href="tel:+49123456789">+49 123 456789</a></li>
+            <li>
+              Email:
+              <a href="mailto:contact@labcode.com">contact@labcode.com</a>
+            </li>
+            <li>Address: Labcode Street, 123 Tech Park, Berlin, Germany</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Labcode. All rights reserved.</p>
+      </div>
+      <button class="move-top-btn"><i class="ri-arrow-up-s-fill"></i></button>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="js/custom.js"></script>
+    <script src="js/components/testimonials.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="js/swiper.js"></script>
+  </body>
+</html>
