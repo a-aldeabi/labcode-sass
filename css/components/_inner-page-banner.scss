@@ -4,14 +4,13 @@
 
 .inner-page-banner {
   background: $color-bg-secondary;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
 
-  /* استخدام المكسن لتجنب تكرار الكود */
   &::before {
     @include banner-dot(left);
   }
@@ -19,18 +18,31 @@
   &::after {
     @include banner-dot(right);
   }
-
   h2 {
+    color: $color-primary;
+    font-weight: 600;
+    margin-bottom: $space-16;
+    font-size: $font16;
+  }
+
+  h3 {
     font-size: $font40;
-    margin-bottom: 10px;
+    margin-bottom: $space-20;
     font-weight: bold;
+    span {
+      color: $color-primary;
+    }
   }
 
   p {
     font-size: $font16;
-    max-width: 550px;
+    max-width: 650px;
     margin: 0 auto;
     color: $color-text;
     line-height: 1.6;
+  }
+  .btn {
+    margin-top: $space-40;
+    display: inline-block;
   }
 }

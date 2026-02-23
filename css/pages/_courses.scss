@@ -1,0 +1,55 @@
+@use "../themes/index" as *;
+@use "../abstracts/index" as *;
+@use "../components/index" as *;
+
+.courses {
+  padding: $space-100 $space-20;
+  @include heading-left;
+
+  .course-filter {
+    margin: $space-20 0;
+    display: flex;
+    gap: $space-16;
+    align-items: center;
+
+    h3 {
+      font-size: $font16;
+    }
+
+    .btn-filter {
+      background-color: $color-bg-light-gray;
+      color: $color-heading;
+      transition: all 0.5s;
+      font-size: $font12;
+
+      &:hover {
+        background-color: $color-bg-secondary;
+      }
+
+      &:active {
+        background-color: $color-primary;
+        color: white;
+      }
+    }
+  }
+
+  .course-card-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    .course-card {
+      @include course-card;
+      transform: scale(1);
+      opacity: 1;
+      transition: all 0.35s ease;
+    }
+
+    .course-card.is-hiding {
+      opacity: 0;
+      transform: scale(0.95);
+      pointer-events: none;
+      transition: all 0.35s ease;
+    }
+  }
+}

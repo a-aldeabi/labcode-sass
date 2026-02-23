@@ -131,7 +131,8 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
     }
   }
 
-  #bootcamp .course-card-group {
+  #bootcamp .course-card-group,
+  #course-card-group {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -181,6 +182,9 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
   #teachers-con {
     grid-template-columns: repeat(2, 1fr);
   }
+  #course-filter {
+    flex-wrap: wrap;
+  }
 }
 
 /* SM - ≤480px */
@@ -199,7 +203,8 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
       }
     }
   }
-  #bootcamp .course-card-group {
+  #bootcamp .course-card-group,
+  #course-card-group {
     grid-template-columns: 1fr;
   }
   #banner .imgtxt {

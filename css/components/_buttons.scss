@@ -20,6 +20,11 @@
   font-size: $font14;
 }
 
+.btn-filter {
+  @include button(8px, 14px); // small size
+  font-size: 14px;
+}
+
 /* burger btn */
 .btn-burger-menu {
   display: none;
