@@ -63,8 +63,4 @@ D:.
 
 ```
 
-## View Project
-[🔗 GitHub Repository](https://github.com/a-aldeabi/labcode-sass)
-```
-
  
