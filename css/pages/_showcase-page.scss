@@ -1,0 +1,72 @@
+@use "../themes/index" as *;
+
+#inner-page-showcase {
+  &::before {
+    display: none !important;
+  }
+  &::after {
+    display: none !important;
+  }
+  height: 80vh;
+  .inner-con {
+    display: flex;
+    gap: $space-48;
+    flex: 1 1;
+  }
+  .con-text {
+    text-align: left;
+    .banner-btns {
+      gap: $space-16;
+      display: flex;
+      .btn-white {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  p {
+    color: $color-text;
+  }
+}
+
+.sass-techniques {
+  .techniques-con {
+    border-top: 1px solid #e2e2e2;
+    padding: $space-40 0;
+    .sass-keys {
+      display: flex;
+      gap: $space-16;
+      flex-wrap: wrap;
+      li {
+        background-color: $color-bg--Tertiary;
+        padding: $space-8;
+      }
+    }
+    .pages {
+      display: flex;
+      flex-direction: column;
+      gap: $space-8;
+      li {
+        color: $color-text;
+      }
+    }
+    .github-link {
+      color: $color-text;
+      text-decoration: underline;
+    }
+  }
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: $space-20;
+  }
+}
+
+#showcase-footer {
+  padding: $space-20 0;
+  background-color: white;
+  .footer-bottom {
+    margin-top: 0;
+    border-top: 1px solid #e2e2e2;
+  }
+}

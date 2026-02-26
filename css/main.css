@@ -173,6 +173,28 @@
   #course-filter {
     flex-wrap: wrap;
   }
+  .inner-page-banner::after,
+  .inner-page-banner::before {
+    display: none;
+  }
+  #detail-page-banner {
+    height: auto;
+  }
+  #banner-detail-con {
+    flex-wrap: wrap !important;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  #banner-detail-con .video-container {
+    flex: 0 0 100px;
+  }
+  #banner-detail-con .detail-description {
+    flex: 1;
+    text-align: left;
+    width: 100%;
+    padding: 20px 40px;
+  }
 }
 /* SM - ≤480px */
 @media (max-width: 480px) {
@@ -425,7 +447,7 @@ body {
   width: 100%;
 }
 .testimonial-card .testmonial-des {
-  color: #666666;
+  color: #545454;
   font-size: 14px;
   font-weight: normal;
   margin-bottom: 32px;
@@ -464,7 +486,7 @@ body {
 }
 .testimonial-card .user-block .user-text p {
   font-size: 12px;
-  color: #666666;
+  color: #545454;
 }
 
 .testimonial-swiper {
@@ -542,7 +564,7 @@ body {
   font-size: 16px;
   max-width: 650px;
   margin: 0 auto;
-  color: #666666;
+  color: #545454;
   line-height: 1.6;
 }
 .inner-page-banner .btn {
@@ -723,7 +745,7 @@ header nav .nav-items .login-btn {
   display: none;
 }
 header nav .nav-items li a {
-  color: #666666;
+  color: #545454;
   transition: color 0.2s ease;
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
@@ -758,7 +780,8 @@ header nav .authentication button {
    Search Bar
    ========================= */
 .search-bar {
-  background: #f0f1f4;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   color: #666;
   width: 100%;
   position: absolute;
@@ -927,7 +950,7 @@ header nav .authentication button {
   color: #5b4fe0;
 }
 .banner .banner-wrapper .banner-text-side p {
-  color: #666666;
+  color: #545454;
   font-size: 16px;
 }
 .banner .banner-wrapper .banner-text-side .banner-btns {
@@ -1030,6 +1053,7 @@ header nav .authentication button {
   color: #9fa0a3;
   border-top: 1px solid #2d2843;
   font-size: 12px;
+  text-align: center;
 }
 
 .Features {
@@ -1051,7 +1075,7 @@ header nav .authentication button {
   color: #5b4fe0;
 }
 .Features .features-con .Features-left-side p {
-  color: #666666;
+  color: #545454;
   max-width: 80%;
   line-height: 1.7;
   font-size: 15.5px;
@@ -1073,7 +1097,7 @@ header nav .authentication button {
   align-items: center;
   gap: 12px;
   font-size: 15.5px;
-  color: #666666;
+  color: #545454;
 }
 
 /* statistics section */
@@ -1193,6 +1217,7 @@ header nav .authentication button {
 }
 .courses .course-filter {
   margin: 20px 0;
+  margin-top: 40px;
   display: flex;
   gap: 16px;
   align-items: center;
@@ -1210,6 +1235,10 @@ header nav .authentication button {
   background-color: #efeefa;
 }
 .courses .course-filter .btn-filter:active {
+  background-color: #5b4fe0;
+  color: white;
+}
+.courses .course-filter .btn-filter.active {
   background-color: #5b4fe0;
   color: white;
 }
@@ -1234,7 +1263,7 @@ header nav .authentication button {
 }
 .courses .course-card-group .course-card .img-wrapper .likes {
   padding: 4px;
-  color: #666666;
+  color: #545454;
   background-color: rgba(250, 250, 250, 0.8745098039);
   position: absolute;
   display: flex;
@@ -1254,7 +1283,7 @@ header nav .authentication button {
 }
 .courses .course-card-group .course-card p {
   font-size: 12px;
-  color: #666666;
+  color: #545454;
   font-weight: normal;
 }
 .courses .course-card-group .course-card .btn {
@@ -1328,7 +1357,7 @@ header nav .authentication button {
 }
 .bootcamp .course-card-group .course-card .img-wrapper .likes {
   padding: 4px;
-  color: #666666;
+  color: #545454;
   background-color: rgba(250, 250, 250, 0.8745098039);
   position: absolute;
   display: flex;
@@ -1348,7 +1377,7 @@ header nav .authentication button {
 }
 .bootcamp .course-card-group .course-card p {
   font-size: 12px;
-  color: #666666;
+  color: #545454;
   font-weight: normal;
 }
 .bootcamp .course-card-group .course-card .btn {
@@ -1394,7 +1423,7 @@ header nav .authentication button {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   width: 75%;
   font-size: 14px;
-  color: #666666;
+  color: #545454;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1426,7 +1455,7 @@ header nav .authentication button {
 }
 .choose-us .choose-wrapper .choose-text-side ul li {
   font-size: 17px;
-  color: #666666;
+  color: #545454;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -1535,6 +1564,202 @@ header nav .authentication button {
 }
 
 /*end of Testmonial */
+.detail-page-banner {
+  background: #efeefa;
+  height: 60vh;
+  padding: 40px 20px;
+}
+
+.banner-detail-con {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.banner-detail-con .video-container {
+  flex: 0 0 500px;
+}
+.banner-detail-con .detail-description {
+  flex: 1;
+}
+.banner-detail-con .detail-description h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.banner-detail-con .detail-description ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: circle;
+  gap: 12px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* contetn list */
+.conten-con {
+  padding: 60px 20px;
+}
+.conten-con .content-heading {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.conten-con .left-link {
+  display: flex;
+  align-items: center;
+  color: #13111d;
+  gap: 12px;
+}
+.conten-con .left-link a {
+  text-decoration: underline;
+}
+.conten-con .content-list {
+  position: relative;
+  overflow: hidden;
+}
+.conten-con .content-list::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.conten-con .content-list li:first-child {
+  background-color: #5b4fe0;
+  text-decoration-color: white;
+  color: white !important;
+}
+.conten-con .content-list li:first-child .left-link {
+  color: white;
+}
+.conten-con .content-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  color: #13111d;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(226, 226, 226, 0.326);
+}
+.conten-con .subscribe-link {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  color: #13111d;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/*end of list content*/
+/*overview*/
+.overview .overview-con {
+  border-top: 1px solid #e2e2e2;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 48px 0;
+}
+.overview .overview-con h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.overview .overview-con p {
+  line-height: 1.6;
+  color: #545454;
+}
+
+/*end of overview*/
+/*teacher-details*/
+.teacher-details {
+  padding: 40px;
+}
+.teacher-details .teacher-details-con .teacher-avatar {
+  display: flex;
+  justify-content: start;
+  gap: 32px;
+  align-items: center;
+}
+.teacher-details .teacher-details-con .teacher-avatar h3 {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.teacher-details .teacher-details-con .teacher-experience {
+  color: #545454;
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+/*end of teacher-details*/
+#inner-page-showcase::before {
+  display: none !important;
+}
+#inner-page-showcase::after {
+  display: none !important;
+}
+#inner-page-showcase {
+  height: 80vh;
+}
+#inner-page-showcase .inner-con {
+  display: flex;
+  gap: 48px;
+  flex: 1 1;
+}
+#inner-page-showcase .con-text {
+  text-align: left;
+}
+#inner-page-showcase .con-text .banner-btns {
+  gap: 16px;
+  display: flex;
+}
+#inner-page-showcase .con-text .banner-btns .btn-white {
+  display: flex;
+  align-items: center;
+}
+#inner-page-showcase p {
+  color: #545454;
+}
+
+.sass-techniques .techniques-con {
+  border-top: 1px solid #e2e2e2;
+  padding: 40px 0;
+}
+.sass-techniques .techniques-con .sass-keys {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.sass-techniques .techniques-con .sass-keys li {
+  background-color: #f9f8ff;
+  padding: 8px;
+}
+.sass-techniques .techniques-con .pages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sass-techniques .techniques-con .pages li {
+  color: #545454;
+}
+.sass-techniques .techniques-con .github-link {
+  color: #545454;
+  text-decoration: underline;
+}
+.sass-techniques h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#showcase-footer {
+  padding: 20px 0;
+  background-color: white;
+}
+#showcase-footer .footer-bottom {
+  margin-top: 0;
+  border-top: 1px solid #e2e2e2;
+}
+
 * {
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }

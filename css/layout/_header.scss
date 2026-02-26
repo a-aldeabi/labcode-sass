@@ -91,7 +91,9 @@ header {
    Search Bar
    ========================= */
 .search-bar {
-  background: $color-bg-light-gray;
+  background: white;
+  box-shadow: $shadow-sm;
+
   color: #666;
   width: 100%;
   position: absolute;

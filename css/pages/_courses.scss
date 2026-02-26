@@ -8,6 +8,7 @@
 
   .course-filter {
     margin: $space-20 0;
+    margin-top: $space-40;
     display: flex;
     gap: $space-16;
     align-items: center;
@@ -27,6 +28,11 @@
       }
 
       &:active {
+        background-color: $color-primary;
+        color: white;
+      }
+
+      &.active {
         background-color: $color-primary;
         color: white;
       }

@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>LabCode</title>
+    <title>Courses Details</title>
 
     <!-- CSS links -->
     <link rel="stylesheet" href="css/main.css" />
@@ -28,9 +28,9 @@
       <nav role="navigation" aria-label="Main navigation">
         <div class="left-nav">
           <div class="logo">
-            <a href="index.html" aria-label="Go to homepage">
-              <h1>Lab<span>code</span></h1>
-            </a>
+            <a href="index.html" aria-label="Go to homepage"
+              ><h1>Lab<span>code</span></h1></a
+            >
           </div>
           <ul class="nav-items" id="pullMenu">
             <li><a href="index.html">Home</a></li>
@@ -69,28 +69,132 @@
 
     <!-- Main Content Wrapper -->
     <main id="main-content">
-      <!-- Courses Section -->
-      <section class="courses">
+      <!-- Inner Banner -->
+      <section class="detail-page-banner" id="detail-page-banner">
         <div class="container">
-          <div class="heading-left">
-            <p>Most Popular</p>
-            <h2>Discover Your <span>Bootcamp</span></h2>
-          </div>
+          <div class="banner-detail-con" id="banner-detail-con">
+            <div class="video-container">
+              <video id="myVideo" controls aria-label="Introductory video">
+                <source src="img/intro-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
 
-          <!-- Category Filter -->
-          <div class="course-filter" id="course-filter">
-            <h3>Category:</h3>
-            <button class="btn btn-filter active">All</button>
-            <button class="btn btn-filter">Programming</button>
-            <button class="btn btn-filter">UI & UX</button>
-            <button class="btn btn-filter">Marketing</button>
-            <button class="btn btn-filter">Data Science</button>
+            <div class="detail-description">
+              <h2>UI/UX Design Course</h2>
+              <h3>Leslie Alexander</h3>
+              <ul>
+                <li>Duration: 24 Lessons (3h 9m)</li>
+                <li>Level: Beginner to Advanced</li>
+                <li>Language: English</li>
+                <li>Certificate: Available upon Completion</li>
+              </ul>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <!-- Courses List -->
-          <div class="course-card-group" id="course-card-group">
-            <!-- Each card now links to details page -->
-            <div class="course-card" data-category="Marketing">
+      <!-- Features / Lessons -->
+      <section class="course-content">
+        <div class="conten-con container" id="conten-con">
+          <h2 class="content-heading">Lessons in This Class</h2>
+          <ul class="content-list">
+            <li>
+              <div class="left-link">
+                <i class="ri-git-repository-private-line"></i
+                ><a href="#">1. Introduction to Programming</a>
+              </div>
+              <p class="video-time">00:30</p>
+            </li>
+            <li>
+              <div class="left-link">
+                <i class="ri-git-repository-private-line"></i
+                ><a href="#">2. Variables and Data Types</a>
+              </div>
+              <p class="video-time">01:05</p>
+            </li>
+            <li>
+              <div class="left-link">
+                <i class="ri-git-repository-private-line"></i
+                ><a href="#">3. Conditional Statements (If / Else)</a>
+              </div>
+              <p class="video-time">01:20</p>
+            </li>
+            <li>
+              <div class="left-link">
+                <i class="ri-git-repository-private-line"></i
+                ><a href="#">4. Loops (For / While)</a>
+              </div>
+              <p class="video-time">01:35</p>
+            </li>
+            <li>
+              <div class="left-link">
+                <i class="ri-git-repository-private-line"></i
+                ><a href="#">5. Functions and Scope</a>
+              </div>
+              <p class="video-time">01:15</p>
+            </li>
+            <li>
+              <div class="left-link">
+                <i class="ri-git-repository-private-line"></i
+                ><a href="#">6. Arrays and Objects</a>
+              </div>
+              <p class="video-time">01:40</p>
+            </li>
+          </ul>
+          <a href="#" class="subscribe-link">Unlock All Lessons</a>
+        </div>
+      </section>
+
+      <!-- Course Overview -->
+      <section class="overview">
+        <div class="container overview-con">
+          <h2>Course Overview</h2>
+          <p>
+            This course introduces you to the fundamentals of User Experience
+            (UX) design. You'll learn how to create intuitive and user-friendly
+            interfaces by understanding key principles such as user research,
+            wireframing, prototyping, and usability testing. Through hands-on
+            exercises and real-world examples, you will gain the skills
+            necessary to design seamless digital experiences that meet user
+            needs and improve satisfaction. Whether you're a beginner or looking
+            to enhance your existing skills, this course will provide valuable
+            insights into the world of UX design.
+          </p>
+        </div>
+      </section>
+
+      <!-- Teacher Details -->
+      <section class="teacher-details">
+        <div class="container teacher-details-con">
+          <div class="teacher-avatar">
+            <img
+              src="img/teahcer-detail-avatar.png"
+              alt="Leslie Alexander avatar"
+            />
+            <div class="teacher-text">
+              <h3>Leslie Alexander</h3>
+              <p>UI/UX Designer</p>
+            </div>
+          </div>
+          <p class="teacher-experience">
+            With over 10 years of experience in design and 7 years in iOS app
+            development, I’m passionate about helping students quickly learn new
+            skills. I specialize in UI/UX design and currently teach Figma,
+            Sketch, Illustrator, and more. I look forward to guiding you through
+            the world of design!
+          </p>
+        </div>
+      </section>
+
+      <!-- Related Courses / Bootcamp -->
+      <section class="bootcamp" id="bootcamp">
+        <div class="container">
+          <div class="heading-center">
+            <h2>Related Courses</h2>
+          </div>
+          <div class="course-card-group">
+            <div class="course-card">
               <div class="img-wrapper">
                 <img
                   src="img/course-img/cour1.jpg"
@@ -110,7 +214,7 @@
               >
             </div>
 
-            <div class="course-card" data-category="Programming">
+            <div class="course-card">
               <div class="img-wrapper">
                 <img
                   src="img/course-img/cour2.jpg"
@@ -130,7 +234,7 @@
               >
             </div>
 
-            <div class="course-card" data-category="UI & UX">
+            <div class="course-card">
               <div class="img-wrapper">
                 <img
                   src="img/course-img/cour3.jpg"
@@ -150,7 +254,7 @@
               >
             </div>
 
-            <div class="course-card" data-category="UI & UX">
+            <div class="course-card">
               <div class="img-wrapper">
                 <img
                   src="img/course-img/cour4.jpg"
@@ -169,151 +273,15 @@
                 >Enroll Now</a
               >
             </div>
-
-            <div class="course-card" data-category="Data Science">
-              <div class="img-wrapper">
-                <img
-                  src="img/course-img/cour5.jpg"
-                  alt="Data Science Bootcamp course"
-                />
-                <div class="likes">
-                  <span>2.5k</span><i class="ri-heart-fill"></i>
-                </div>
-              </div>
-              <h3>Data Science Bootcamp</h3>
-              <p>Beginner - 70 hours</p>
-              <a
-                href="courses-details.html"
-                class="btn btn-white"
-                aria-label="Go to Data Science Bootcamp course details"
-                >Enroll Now</a
-              >
-            </div>
-
-            <div class="course-card" data-category="Data Science">
-              <div class="img-wrapper">
-                <img
-                  src="img/course-img/cour6.jpg"
-                  alt="Python for Data Science course"
-                />
-                <div class="likes">
-                  <span>2.5k</span><i class="ri-heart-fill"></i>
-                </div>
-              </div>
-              <h3>Python for Data Science</h3>
-              <p>Intermediate - 50 hours</p>
-              <a
-                href="courses-details.html"
-                class="btn btn-white"
-                aria-label="Go to Python for Data Science course details"
-                >Enroll Now</a
-              >
-            </div>
-
-            <div class="course-card" data-category="Data Science">
-              <div class="img-wrapper">
-                <img
-                  src="img/course-img/cour7.jpg"
-                  alt="Machine Learning course"
-                />
-                <div class="likes">
-                  <span>2.5k</span><i class="ri-heart-fill"></i>
-                </div>
-              </div>
-              <h3>Machine Learning</h3>
-              <p>Advanced - 80 hours</p>
-              <a
-                href="courses-details.html"
-                class="btn btn-white"
-                aria-label="Go to Machine Learning course details"
-                >Enroll Now</a
-              >
-            </div>
-
-            <div class="course-card" data-category="Programming">
-              <div class="img-wrapper">
-                <img src="img/course-img/cour2.jpg" alt="ReactJS course" />
-                <div class="likes">
-                  <span>2.5k</span><i class="ri-heart-fill"></i>
-                </div>
-              </div>
-              <h3>ReactJS</h3>
-              <p>Intermediate - 45 hours</p>
-              <a
-                href="courses-details.html"
-                class="btn btn-white"
-                aria-label="Go to ReactJS course details"
-                >Enroll Now</a
-              >
-            </div>
           </div>
-          <!-- End courses-con -->
-        </div>
-        <!-- End container -->
-      </section>
 
-      <!-- Our Teachers Section -->
-      <section class="teachers">
-        <div class="container">
-          <div class="heading-center">
-            <p>Meet Our Expert Teachers</p>
-            <h2>Our <span>teachers</span></h2>
-            <p class="heading-des">
-              Experienced instructors guiding you every step to success.
-            </p>
-          </div>
-          <div class="teachers-con" id="teachers-con">
-            <div class="teacher-block">
-              <img
-                src="img/teachers/teacher-1.jpg"
-                alt="Leslie Alexander - UI / UX Designer"
-              />
-              <h3>Leslie Alexander</h3>
-              <h4>UI / UX Designer</h4>
-              <p>
-                Expert in creating intuitive and user-friendly designs, focused
-                on enhancing user experience.
-              </p>
-            </div>
-
-            <div class="teacher-block">
-              <img
-                src="img/teachers/teacher-2.jpg"
-                alt="Robert Fox - Frontend Developer"
-              />
-              <h3>Robert Fox</h3>
-              <h4>Frontend Developer</h4>
-              <p>
-                Specializes in responsive web design and building interactive
-                user interfaces with modern frameworks.
-              </p>
-            </div>
-
-            <div class="teacher-block">
-              <img
-                src="img/teachers/teacher-3.jpg"
-                alt="Jenny Wilson - Backend Developer"
-              />
-              <h3>Jenny Wilson</h3>
-              <h4>Backend Developer</h4>
-              <p>
-                Experienced in server-side programming and database management,
-                ensuring scalable web applications.
-              </p>
-            </div>
-
-            <div class="teacher-block">
-              <img
-                src="img/teachers/teacher-4.jpg"
-                alt="Courtney Henry - Data Scientist"
-              />
-              <h3>Courtney Henry</h3>
-              <h4>Data Scientist</h4>
-              <p>
-                Passionate about machine learning and data analytics, helping
-                students understand complex datasets.
-              </p>
-            </div>
+          <div class="more-sec">
+            <a
+              href="courses.html"
+              class="btn btn-lg"
+              aria-label="Discover more courses"
+              >Discover More</a
+            >
           </div>
         </div>
       </section>
@@ -379,6 +347,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="js/swiper.js"></script>
-    <script src="js/components/courses-filter.js"></script>
   </body>
 </html>

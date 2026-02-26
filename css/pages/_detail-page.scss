@@ -1,0 +1,142 @@
+@use "../themes/index" as *;
+
+.detail-page-banner {
+  background: $color-bg-secondary;
+  height: 60vh;
+  padding: $space-40 $space-20;
+}
+
+.banner-detail-con {
+  display: flex;
+  gap: $space-40;
+  align-items: flex-start;
+  margin-top: $space-40;
+  .video-container {
+    flex: 0 0 500px;
+  }
+  .detail-description {
+    flex: 1;
+    h2 {
+      font-size: $font28;
+      font-weight: bold;
+      margin-bottom: $space-20;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: circle;
+      gap: $space-12;
+      margin-top: $space-20;
+      margin-left: $space-20;
+    }
+  }
+}
+
+/* contetn list */
+
+.conten-con {
+  padding: $space-60 $space-20;
+  .content-heading {
+    font-weight: bold;
+    margin-bottom: $space-20;
+  }
+  .left-link {
+    display: flex;
+    align-items: center;
+    color: $color-heading;
+    gap: $space-12;
+    a {
+      text-decoration: underline;
+    }
+  }
+  .content-list {
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    li:first-child {
+      background-color: $color-primary;
+      text-decoration-color: white;
+      color: white !important;
+      .left-link {
+        color: white;
+      }
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $space-16;
+      color: $color-heading;
+      margin-bottom: $space-8;
+      border-bottom: 1px solid rgba(226, 226, 226, 0.326);
+    }
+  }
+  .subscribe-link {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: $color-heading;
+    display: inline-block;
+    font-weight: bold;
+  }
+}
+
+/*end of list content*/
+
+/*overview*/
+.overview {
+  .overview-con {
+    border-top: 1px solid #e2e2e2;
+    padding-bottom: $space-60;
+    border-bottom: 1px solid #e2e2e2;
+    padding: $space-48 0;
+
+    h2 {
+      font-weight: bold;
+      margin-bottom: $space-20;
+    }
+    p {
+      line-height: 1.6;
+      color: $color-text;
+    }
+  }
+}
+
+/*end of overview*/
+
+/*teacher-details*/
+.teacher-details {
+  padding: $space-40;
+  .teacher-details-con {
+    .teacher-avatar {
+      display: flex;
+      justify-content: start;
+      gap: $space-32;
+      align-items: center;
+      h3 {
+        font-weight: bold;
+        margin-bottom: $space-4;
+      }
+    }
+    .teacher-experience {
+      color: $color-text;
+      margin-top: $space-40;
+      padding-bottom: $space-60;
+    }
+  }
+}
+
+/*end of teacher-details*/

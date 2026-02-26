@@ -2,11 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>LabCode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootcamp Courses</title>
 
     <!-- CSS links -->
     <link rel="stylesheet" href="css/main.css" />
@@ -23,7 +20,7 @@
   </head>
 
   <body>
-    <!-- Header / Navigation -->
+    <!-- Header -->
     <header>
       <nav role="navigation" aria-label="Main navigation">
         <div class="left-nav">
@@ -36,23 +33,19 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="courses.html">Courses</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
             <li class="login-btn">
               <button class="btn-dm btn-white">Login</button>
             </li>
           </ul>
         </div>
-
         <div class="authentication">
           <button aria-label="Search" class="search-btn" id="search-btn">
             <i class="ri-search-line"></i>
           </button>
           <button class="btn-sm" aria-label="Login">Login</button>
           <button class="btn-burger-menu" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
           </button>
         </div>
       </nav>
@@ -70,7 +63,7 @@
       </div>
     </header>
 
-    <!-- Main Content Wrapper -->
+    <!-- Main Content -->
     <main id="main-content">
       <!-- Hero Banner -->
       <section class="banner" id="banner">
@@ -88,12 +81,10 @@
                 class="btn btn-white"
                 id="video-btn"
                 aria-label="Watch introduction video"
-              >
-                Watch video <i class="ri-arrow-right-s-fill"></i>
-              </a>
+                >Watch video <i class="ri-arrow-right-s-fill"></i
+              ></a>
             </div>
           </div>
-
           <div class="banner-img-side">
             <div class="img-warrper">
               <div class="imgtxt">
@@ -120,7 +111,7 @@
           </div>
         </div>
 
-        <!-- Video modal -->
+        <!-- Video Modal -->
         <div class="video-modal" id="video-modal">
           <div class="video-warapper">
             <button id="close-video-btn" aria-label="Close video">
@@ -140,7 +131,7 @@
         </div>
       </section>
 
-      <!-- Bootcamp Section -->
+      <!-- Bootcamp Courses Section -->
       <section class="bootcamp" id="bootcamp">
         <div class="container">
           <div class="heading-center">
@@ -148,7 +139,7 @@
             <h2>Discover Your <span>Bootcamp</span></h2>
           </div>
           <div class="course-card-group">
-            <!-- Four sample course cards -->
+            <!-- Course 1 -->
             <div class="course-card">
               <div class="img-wrapper">
                 <img
@@ -162,72 +153,78 @@
               <h3>Social Media Marketing</h3>
               <p>Beginner - 40 hours</p>
               <a
-                href="#"
+                href="courses-details.html"
                 class="btn btn-white"
                 aria-label="Enroll in Social Media Marketing course"
                 >Enroll Now</a
               >
             </div>
+
+            <!-- Course 2 -->
             <div class="course-card">
               <div class="img-wrapper">
                 <img
                   src="img/course-img/cour2.jpg"
-                  alt="Social Media Marketing course"
+                  alt="Digital Marketing course"
                 />
                 <div class="likes">
                   <span>2.5k</span><i class="ri-heart-fill"></i>
                 </div>
               </div>
-              <h3>Social Media Marketing</h3>
-              <p>Beginner - 40 hours</p>
+              <h3>Digital Marketing</h3>
+              <p>Beginner - 50 hours</p>
               <a
-                href="#"
+                href="courses-details.html"
                 class="btn btn-white"
-                aria-label="Enroll in Social Media Marketing course"
+                aria-label="Enroll in Digital Marketing course"
                 >Enroll Now</a
               >
             </div>
+
+            <!-- Course 3 -->
             <div class="course-card">
               <div class="img-wrapper">
                 <img
                   src="img/course-img/cour3.jpg"
-                  alt="Social Media Marketing course"
+                  alt="Web Development course"
                 />
                 <div class="likes">
                   <span>2.5k</span><i class="ri-heart-fill"></i>
                 </div>
               </div>
-              <h3>Social Media Marketing</h3>
-              <p>Beginner - 40 hours</p>
+              <h3>Web Development</h3>
+              <p>Intermediate - 60 hours</p>
               <a
-                href="#"
+                href="courses-details.html"
                 class="btn btn-white"
-                aria-label="Enroll in Social Media Marketing course"
+                aria-label="Enroll in Web Development course"
                 >Enroll Now</a
               >
             </div>
+
+            <!-- Course 4 -->
             <div class="course-card">
               <div class="img-wrapper">
-                <img
-                  src="img/course-img/cour4.jpg"
-                  alt="Social Media Marketing course"
-                />
+                <img src="img/course-img/cour4.jpg" alt="UI/UX Design course" />
                 <div class="likes">
                   <span>2.5k</span><i class="ri-heart-fill"></i>
                 </div>
               </div>
-              <h3>Social Media Marketing</h3>
-              <p>Beginner - 40 hours</p>
+              <h3>UI/UX Design</h3>
+              <p>Advanced - 70 hours</p>
               <a
-                href="#"
+                href="courses-details.html"
                 class="btn btn-white"
-                aria-label="Enroll in Social Media Marketing course"
+                aria-label="Enroll in UI/UX Design course"
                 >Enroll Now</a
               >
             </div>
           </div>
           <div class="more-sec">
-            <a href="#" class="btn btn-lg" aria-label="Discover more courses"
+            <a
+              href="courses.html"
+              class="btn btn-lg"
+              aria-label="Discover more courses"
               >Discover More</a
             >
           </div>
@@ -300,99 +297,55 @@
         </div>
       </section>
 
-      <!-- Testimonials Section -->
-      <section class="testimonial" id="testimonial">
-        <div class="container">
-          <div class="heading-center">
-            <p>Best choice</p>
-            <h2>Why people <span>choose us</span></h2>
-          </div>
-
-          <!-- Swiper Container -->
-          <div
-            class="swiper testimonial-swiper"
-            aria-label="Testimonials slider"
-          >
-            <div class="swiper-wrapper">
-              <!-- Slides generated dynamically via JS -->
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-con" id="footer-con">
+          <div class="footer-column logo-column">
+            <div class="footer-logo">
+              <h2>Lab<span>code</span></h2>
             </div>
-
-            <!-- Navigation -->
-            <div class="swiper-button-next" aria-label="Next testimonial"></div>
-            <div
-              class="swiper-button-prev"
-              aria-label="Previous testimonial"
-            ></div>
-
-            <!-- Pagination -->
-            <div
-              class="swiper-pagination"
-              aria-label="Testimonials pagination"
-            ></div>
+            <p>
+              We are an online school teaching design and programming, providing
+              students with practical skills for today’s job market.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Support Center</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+              <li>Phone: <a href="tel:+49123456789">+49 123 456789</a></li>
+              <li>
+                Email:
+                <a href="mailto:contact@labcode.com">contact@labcode.com</a>
+              </li>
+              <li>Address: Labcode Street, 123 Tech Park, Berlin, Germany</li>
+            </ul>
           </div>
         </div>
-      </section>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Labcode. All rights reserved.</p>
+        </div>
+        <button class="move-top-btn"><i class="ri-arrow-up-s-fill"></i></button>
+      </footer>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer-con" id="footer-con">
-        <!-- Column 1: Logo & Description -->
-        <div class="footer-column logo-column">
-          <div class="footer-logo">
-            <h2>Lab<span>code</span></h2>
-          </div>
-          <p>
-            We are an online school teaching design and programming, providing
-            students with practical skills for today’s job market.
-          </p>
-        </div>
-
-        <!-- Column 2: Help / Links -->
-        <div class="footer-column">
-          <h3>Help</h3>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Support Center</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3: Follow Us -->
-        <div class="footer-column">
-          <h3>Follow Us</h3>
-          <ul class="social-links">
-            <li><a href="#" aria-label="Follow on Twitter">Twitter</a></li>
-            <li>
-              <a href="#" aria-label="Follow on Instagram">Instagram</a>
-            </li>
-            <li><a href="#" aria-label="Follow on LinkedIn">LinkedIn</a></li>
-            <li><a href="#" aria-label="Follow on YouTube">YouTube</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 4: Contact Info -->
-        <div class="footer-column">
-          <h3>Contact</h3>
-          <ul class="contact-info">
-            <li>Phone: <a href="tel:+49123456789">+49 123 456789</a></li>
-            <li>
-              Email:
-              <a href="mailto:contact@labcode.com">contact@labcode.com</a>
-            </li>
-            <li>Address: Labcode Street, 123 Tech Park, Berlin, Germany</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <p>&copy; 2026 Labcode. All rights reserved.</p>
-      </div>
-      <button class="move-top-btn"><i class="ri-arrow-up-s-fill"></i></button>
-    </footer>
 
     <!-- JS Libraries -->
     <script src="js/custom.js"></script>
