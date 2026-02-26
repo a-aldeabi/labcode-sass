@@ -8,7 +8,7 @@
 
 ## Features
 - ✅ Modern Design  
-- ✅ HTML5 Semantic Markup  
+- ✅HTML5 Compatible & Accessibility Friendly
 - ✅ Built with Sass  
 - ✅ Fully Responsive  
 - ✅ Clean, Maintainable Code  
