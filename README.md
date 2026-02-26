@@ -28,7 +28,8 @@
 
 ## Pages
 - 📄 index  
-- 📄 About  
+- 📄 About
+- 📄 Home  
 - 📄 courses  
 - 📄 course details  
 
@@ -38,9 +39,10 @@
 D:.
 |   index.html
 |   about.html
+|   home.html
 |   courses.html
 |   courses-details.html
-|   showcase.html
+|  
 |
 +---css
 |   |   main.scss
