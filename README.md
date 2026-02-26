@@ -1,6 +1,5 @@
 # Labcode Sass – Project Showcase
 
-![Project Screenshot](img/screen.jpg)  
 
 ## About the Project
 **Labcode Sass** is a practical web project focused on implementing **Sass concepts**, organizing style files efficiently, and demonstrating **clean, maintainable CSS architecture** for real-world web development.
