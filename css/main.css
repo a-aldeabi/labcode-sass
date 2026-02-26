@@ -195,6 +195,19 @@
     width: 100%;
     padding: 20px 40px;
   }
+  #inner-page-showcase {
+    height: auto !important;
+  }
+  #inner-page-showcase .inner-con {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #inner-page-showcase .inner-con .con-text p {
+    margin: 0;
+  }
+  #inner-page-showcase .inner-con .img-screen {
+    width: 100%;
+  }
 }
 /* SM - ≤480px */
 @media (max-width: 480px) {
@@ -1692,6 +1705,9 @@ header nav .authentication button {
 }
 
 /*end of teacher-details*/
+#inner-page-showcase {
+  padding: 20px;
+}
 #inner-page-showcase::before {
   display: none !important;
 }
@@ -1704,10 +1720,13 @@ header nav .authentication button {
 #inner-page-showcase .inner-con {
   display: flex;
   gap: 48px;
-  flex: 1 1;
+}
+#inner-page-showcase .img-screen {
+  width: 50%;
 }
 #inner-page-showcase .con-text {
   text-align: left;
+  flex: 1;
 }
 #inner-page-showcase .con-text .banner-btns {
   gap: 16px;
@@ -1723,7 +1742,7 @@ header nav .authentication button {
 
 .sass-techniques .techniques-con {
   border-top: 1px solid #e2e2e2;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 .sass-techniques .techniques-con .sass-keys {
   display: flex;

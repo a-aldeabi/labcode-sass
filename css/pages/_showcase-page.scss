@@ -1,6 +1,7 @@
 @use "../themes/index" as *;
 
 #inner-page-showcase {
+  padding: $space-20;
   &::before {
     display: none !important;
   }
@@ -11,10 +12,14 @@
   .inner-con {
     display: flex;
     gap: $space-48;
-    flex: 1 1;
+  }
+
+  .img-screen {
+    width: 50%;
   }
   .con-text {
     text-align: left;
+    flex: 1;
     .banner-btns {
       gap: $space-16;
       display: flex;
@@ -32,7 +37,7 @@
 .sass-techniques {
   .techniques-con {
     border-top: 1px solid #e2e2e2;
-    padding: $space-40 0;
+    padding: $space-40 $space-20;
     .sass-keys {
       display: flex;
       gap: $space-16;

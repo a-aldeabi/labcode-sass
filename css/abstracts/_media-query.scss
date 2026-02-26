@@ -207,6 +207,22 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
       padding: $space-20 $space-40;
     }
   }
+
+  #inner-page-showcase {
+    height: auto !important;
+    .inner-con {
+      flex-direction: column;
+      padding: $space-20;
+      .con-text {
+        p {
+          margin: 0;
+        }
+      }
+      .img-screen {
+        width: 100%;
+      }
+    }
+  }
 }
 
 /* SM - ≤480px */
