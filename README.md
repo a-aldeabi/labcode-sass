@@ -8,7 +8,7 @@
 
 ## Features
 - ✅ Modern Design  
-- ✅HTML5 Compatible & Accessibility Friendly
+- ✅ HTML5 Compatible & Accessibility Friendly
 - ✅ Built with Sass  
 - ✅ Fully Responsive  
 - ✅ Clean, Maintainable Code  
