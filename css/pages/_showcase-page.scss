@@ -20,6 +20,15 @@
   .con-text {
     text-align: left;
     flex: 1;
+    h2 {
+      font-size: $font40;
+      margin-bottom: $space-20;
+      font-weight: bold;
+      color: $color-heading;
+      span {
+        color: $color-primary;
+      }
+    }
     .banner-btns {
       gap: $space-16;
       display: flex;
@@ -27,6 +36,12 @@
         display: flex;
         align-items: center;
       }
+    }
+    h1 {
+      font-size: $font14;
+      font-weight: bold;
+      color: $color-primary;
+      margin-bottom: $space-16;
     }
   }
   p {
@@ -73,5 +88,8 @@
   .footer-bottom {
     margin-top: 0;
     border-top: 1px solid #e2e2e2;
+    p {
+      color: #545454;
+    }
   }
 }

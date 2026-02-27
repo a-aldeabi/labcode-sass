@@ -26,6 +26,9 @@ $breakpoint-xxl: 1600px; // XXL - Very Large Screens
 
 /* LG - ≤1024px */
 @media (max-width: $breakpoint-lg) {
+  #overview-con {
+    padding: $space-40;
+  }
   body {
     font-size: 17px;
   }
